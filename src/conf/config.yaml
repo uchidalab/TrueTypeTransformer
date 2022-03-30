@@ -1,0 +1,25 @@
+method: test
+seed: 777
+batch_size: 4
+lr: 0.0001
+epoch: 50
+root_dir: '../data/fonts/'
+ref_file: 'google_font_category_v4.csv'
+label_request: 'style'
+filter: large
+lim: 2838
+_fold: 0
+cuda: 0
+logs: logs
+patience: 10
+model:
+	name: ViT
+	font_dim: 100
+	word_size: 5
+	num_classes: 4
+	embed_dim: 100
+	nhead: 5
+	dim_feedforward: 1024
+	depth: 6
+	dropout: 0.1
+	pool: cls

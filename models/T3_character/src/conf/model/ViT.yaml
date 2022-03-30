@@ -1,0 +1,10 @@
+name: ViT
+font_dim: 100
+word_size: 5
+num_classes: 4
+embed_dim: 100
+nhead: 5
+dim_feedforward: 1024
+depth: 6
+dropout: 0.1
+pool: cls

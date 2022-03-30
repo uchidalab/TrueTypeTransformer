@@ -1,0 +1,9 @@
+# @package _group_
+name: MLPmix
+font_dim: 100
+word_size: 5
+num_classes: 26
+hidden_dim: 100
+num_layers: 8
+tokens_hidden_dim: 256
+channels_hidden_dim: 2048

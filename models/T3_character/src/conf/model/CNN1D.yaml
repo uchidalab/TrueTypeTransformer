@@ -1,0 +1,8 @@
+# @package _group_
+name: CNN1D
+font_dim: 100
+word_size: 5
+num_classes: 26
+embed_dim: 100
+dim_feedforward: 1024
+

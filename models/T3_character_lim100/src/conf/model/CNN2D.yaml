@@ -1,0 +1,7 @@
+# @package _group_
+name: CNN2D
+img_size: 64
+channel: 3
+num_classes: 26
+dim_feedforward: 1024
+data_path: '../data/Googlefonts/img'

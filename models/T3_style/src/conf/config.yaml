@@ -1,0 +1,21 @@
+method: test
+seed: 777
+batch_size: 4
+lr: 0.0001
+epoch: 50
+root_dir: '../data/fonts/'
+ref_file: 'google_font_category_v4.csv'
+label_request: 'style'
+filter: large
+lim: 2838
+_fold: 0
+cuda: 0
+logs: logs
+patience: 10
+optimizer:
+  algorithm: Adam
+  learning_rate: 0.01
+  norm: 0.001
+defaults:
+  - _self_
+  - model: ViT
