@@ -15,6 +15,7 @@ test_run.ipynb
 .data
 .vscode
 .devcontainer
+.dockerignore
 runs
 settings.json
 # Byte-compiled / optimized / DLL files
