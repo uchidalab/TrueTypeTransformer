@@ -1,0 +1,1392 @@
+,font,category,subsets,isin_latin,data_type
+0,ubuntucondensed,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext']",True,valid
+1,ubuntu,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu']",True,valid
+2,ubuntumono,MONOSPACE,"['menu', 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext']",True,valid
+3,robotomono,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+4,craftygirls,HANDWRITING,"['latin', 'menu']",True,train
+5,cherrycreamsoda,DISPLAY,"['latin', 'menu']",True,train
+6,ultra,SERIF,"['latin', 'menu']",True,valid
+7,irishgrover,DISPLAY,"['latin', 'menu']",True,train
+8,homemadeapple,HANDWRITING,"['latin', 'menu']",True,train
+9,creepstercaps,DISPLAY,"['menu', 'latin']",True,train
+10,jsmathcmex10,SERIF,"['menu', 'latin']",True,-
+11,cousine,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+12,arimo,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+13,comingsoon,HANDWRITING,"['latin', 'menu']",True,train
+14,luckiestguy,DISPLAY,"['latin', 'menu']",True,train
+15,roboto,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+16,nokora,SERIF,"['khmer', 'menu']",False,train
+17,satisfy,HANDWRITING,"['latin', 'menu']",True,valid
+18,sunshiney,HANDWRITING,"['latin', 'menu']",True,valid
+19,tinos,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+20,calligraffitti,HANDWRITING,"['latin', 'menu']",True,train
+21,jsmathcmsy10,SERIF,"['menu', 'latin']",True,-
+22,rancho,HANDWRITING,"['latin', 'menu']",True,valid
+23,kosugi,SANS_SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+24,jsmathcmr10,SERIF,"['menu', 'latin']",True,-
+25,redressed,HANDWRITING,"['latin', 'menu']",True,valid
+26,kosugimaru,SANS_SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+27,mountainsofchristmas,DISPLAY,"['latin', 'menu']",True,train
+28,opensanscondensed,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+29,robotoslab,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+30,chewy,DISPLAY,"['latin', 'menu']",True,train
+31,justanotherhand,HANDWRITING,"['latin', 'menu']",True,train
+32,rochester,HANDWRITING,"['latin', 'menu']",True,valid
+33,jsmathcmbx10,SERIF,"['menu', 'latin']",True,-
+34,syncopate,SANS_SERIF,"['latin', 'menu']",True,valid
+35,rocksalt,HANDWRITING,"['latin', 'menu']",True,valid
+36,montez,HANDWRITING,"['latin', 'menu']",True,train
+37,unkempt,DISPLAY,"['latin', 'menu']",True,valid
+38,fontdinerswanky,DISPLAY,"['latin', 'menu']",True,train
+39,kranky,DISPLAY,"['latin', 'menu']",True,train
+40,specialelite,DISPLAY,"['latin', 'menu']",True,valid
+41,opensans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+42,jsmathcmmi10,SERIF,"['menu', 'latin']",True,-
+43,schoolbell,HANDWRITING,"['latin', 'menu']",True,valid
+44,slackey,DISPLAY,"['latin', 'menu']",True,valid
+45,crushed,DISPLAY,"['latin', 'menu']",True,train
+46,smokum,DISPLAY,"['latin', 'menu']",True,valid
+47,walterturncoat,HANDWRITING,"['latin', 'menu']",True,-
+48,permanentmarker,HANDWRITING,"['latin', 'menu']",True,train
+49,yellowtail,HANDWRITING,"['latin', 'menu']",True,-
+50,maidenorange,DISPLAY,"['latin', 'menu']",True,train
+51,jsmathcmti10,SERIF,"['menu', 'latin']",True,-
+52,aclonica,SANS_SERIF,"['latin', 'menu']",True,train
+53,goudybookletter1911,SERIF,"['menu', 'latin']",True,-
+54,mulish,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+55,estonia,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+56,passionone,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+57,poly,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+58,josefinslab,SERIF,"['latin', 'menu']",True,train
+59,notosanssymbols,SANS_SERIF,"['menu', 'symbols']",False,-
+60,notosansrejang,SANS_SERIF,"['menu', 'rejang']",False,-
+61,almendra,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+62,notoserifgrantha,SERIF,"['menu', 'grantha']",False,-
+63,balthazar,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+64,notoserifthai,SERIF,"['menu', 'thai']",False,-
+65,elmessiri,SANS_SERIF,"['arabic', 'cyrillic', 'latin', 'latin-ext', 'menu']",True,train
+66,josefinsans,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+67,notoserifethiopic,SERIF,"['ethiopic', 'menu']",False,-
+68,gabriela,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'menu']",True,train
+69,epilogue,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+70,castoro,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+71,palanquin,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+72,leckerlione,HANDWRITING,"['menu', 'latin']",True,train
+73,notosansrunic,SANS_SERIF,"['menu', 'runic']",False,-
+74,abyssinicasil,SERIF,"['menu', 'ethiopic', 'latin']",True,train
+75,dmseriftext,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+76,andadapro,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+77,dancingscript,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+78,gothica1,SANS_SERIF,"['korean', 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+79,karlatamilinclined,SANS_SERIF,['tamil'],False,train
+80,atkinsonhyperlegible,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+81,almendradisplay,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+82,notosanskannadaui,SANS_SERIF,"['kannada', 'menu']",False,-
+83,mallanna,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+84,ribeye,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+85,mrdafoe,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+86,chonburi,DISPLAY,"['menu', 'latin', 'latin-ext', 'thai', 'vietnamese']",True,train
+87,frederickathegreat,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+88,handjet,SANS_SERIF,"['arabic', 'armenian', 'cyrillic', 'cyrillic-ext', 'greek', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+89,cevicheone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+90,novascript,DISPLAY,"['latin', 'menu']",True,train
+91,fasthand,DISPLAY,"['khmer', 'latin', 'menu']",True,train
+92,arya,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+93,mclaren,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+94,bonheurroyale,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+95,stalemate,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+96,baloobhai2,DISPLAY,"['gujarati', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+97,thasadith,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+98,himelody,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+99,notosansavestan,SANS_SERIF,"['menu', 'avestan']",False,-
+100,yujihentaiganaakebono,HANDWRITING,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+101,gravitasone,DISPLAY,"['menu', 'latin']",True,-
+102,kapakana,HANDWRITING,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+103,sancreek,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+104,jomhuria,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+105,autourone,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+106,notosanscypriot,SANS_SERIF,"['menu', 'cypriot']",False,-
+107,markazitext,SERIF,"['arabic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+108,mplus2,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+109,pridi,SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+110,lekton,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+111,tomorrow,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+112,poetsenone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+113,sairastencilone,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+114,oregano,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+115,notosanstagalog,SANS_SERIF,"['menu', 'tagalog']",False,-
+116,alike,SERIF,"['latin', 'menu']",True,train
+117,notosansglagolitic,SANS_SERIF,"['menu', 'glagolitic']",False,-
+118,areyouserious,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+119,taviraj,SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,valid
+120,ranchers,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+121,yesevaone,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+122,geo,SANS_SERIF,"['menu', 'latin']",True,train
+123,margarine,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+124,rougescript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+125,codystar,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+126,teko,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+127,badscript,HANDWRITING,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+128,carattere,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+129,notosansolchiki,SANS_SERIF,"['menu', 'ol-chiki']",False,-
+130,barlow,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+131,notosansmodi,SANS_SERIF,"['menu', 'modi']",False,-
+132,englebert,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+133,playball,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+134,fresca,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+135,recursive,SANS_SERIF,"['cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+136,mako,SANS_SERIF,"['menu', 'latin']",True,train
+137,thegirlnextdoor,HANDWRITING,"['menu', 'latin']",True,-
+138,notosansmultani,SANS_SERIF,"['menu', 'multani']",False,-
+139,capriola,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+140,ibmplexsans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+141,sairaextracondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+142,stixtwotext,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+143,almendrasc,SERIF,"['latin', 'menu']",True,train
+144,mitr,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+145,paytoneone,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+146,atomicage,DISPLAY,"['latin', 'menu']",True,train
+147,mashanzheng,HANDWRITING,"['chinese-simplified', 'latin', 'menu']",True,-
+148,bahiana,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+149,mrdehaviland,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+150,newrocker,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+151,notosansinscriptionalparthian,SANS_SERIF,"['menu', 'inscriptional-parthian']",False,-
+152,notosansmyanmarui,SANS_SERIF,"['menu', 'myanmar']",False,-
+153,unifrakturcook,DISPLAY,"['menu', 'latin']",True,valid
+154,sortsmillgoudy,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+155,mina,SANS_SERIF,"['bengali', 'latin', 'latin-ext', 'menu']",True,train
+156,buenard,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+157,notosanshatran,SANS_SERIF,"['menu', 'hatran']",False,-
+158,julee,HANDWRITING,"['menu', 'latin']",True,train
+159,brunoacesc,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+160,sulphurpoint,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+161,hindjalandhar,SANS_SERIF,"['menu', 'gurmukhi', 'latin', 'latin-ext']",True,train
+162,palettemosaic,DISPLAY,"['japanese', 'latin', 'menu']",True,-
+163,coda,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+164,notosansmalayalam,SANS_SERIF,"['malayalam', 'menu']",False,-
+165,taprom,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+166,originalsurfer,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+167,pathwaygothicone,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+168,headlandone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+169,trocchi,SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+170,notosansmahajani,SANS_SERIF,"['menu', 'mahajani']",False,-
+171,chivo,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+172,ibmplexsansthai,SANS_SERIF,"['cyrillic-ext', 'latin', 'latin-ext', 'menu', 'thai']",True,-
+173,bigshouldersinlinetext,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+174,charm,HANDWRITING,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+175,syne,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+176,risque,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+177,kalam,HANDWRITING,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+178,yesteryear,HANDWRITING,"['menu', 'latin']",True,-
+179,anticdidone,SERIF,"['latin', 'menu']",True,train
+180,kaiseiharunoumi,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+181,stixtwomath,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+182,doppioone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+183,modernantiqua,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+184,birthstone,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+185,hindmadurai,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+186,piazzolla,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+187,notosansnewtailue,SANS_SERIF,"['menu', 'new-tai-lue']",False,-
+188,halant,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+189,uchen,SERIF,"['latin', 'menu', 'tibetan']",True,-
+190,kulimpark,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+191,muktavaani,SANS_SERIF,"['gujarati', 'latin', 'latin-ext', 'menu']",True,train
+192,exo,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+193,habibi,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+194,londrinasketch,DISPLAY,"['latin', 'menu']",True,train
+195,jacquesfrancois,SERIF,"['menu', 'latin']",True,train
+196,bakbakone,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+197,khmer,DISPLAY,"['menu', 'khmer']",False,-
+198,librebarcode128text,DISPLAY,"['latin', 'menu']",True,-
+199,farro,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+200,notoserifnyiakengpuachuehmong,SERIF,"['menu', 'nyiakeng-puachue-hmong']",False,-
+201,salsa,DISPLAY,"['menu', 'latin']",True,valid
+202,novaoval,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+203,notosanssymbols2,SANS_SERIF,"['menu', 'symbols']",False,-
+204,bigshoulderstext,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+205,notosanscanadianaboriginal,SANS_SERIF,"['menu', 'canadian-aboriginal']",False,-
+206,notosanslycian,SANS_SERIF,"['menu', 'lycian']",False,-
+207,shadowsintolight,HANDWRITING,"['menu', 'latin']",True,-
+208,alumnisans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+209,economica,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+210,notosanskharoshthi,SANS_SERIF,"['menu', 'kharoshthi']",False,-
+211,rubikmonoone,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'hebrew', 'latin', 'latin-ext', 'menu']",True,-
+212,fjordone,SERIF,"['menu', 'latin']",True,train
+213,gentiumbasic,SERIF,"['menu', 'latin', 'latin-ext']",True,-
+214,sofia,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+215,averiagruesalibre,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+216,catamaran,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+217,notosanssaurashtra,SANS_SERIF,"['menu', 'saurashtra']",False,-
+218,grenzegotisch,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+219,plaster,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+220,baloo2,DISPLAY,"['devanagari', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+221,koho,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+222,notonaskharabic,SERIF,"['arabic', 'menu']",False,-
+223,notable,SANS_SERIF,"['latin', 'menu']",True,train
+224,hindvadodara,SANS_SERIF,"['gujarati', 'latin', 'latin-ext', 'menu']",True,train
+225,almarai,SANS_SERIF,"['arabic', 'latin', 'menu']",True,-
+226,nosifercaps,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+227,peddana,SERIF,"['menu', 'latin', 'telugu']",True,train
+228,gemunulibre,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'sinhala']",True,train
+229,orbitron,SANS_SERIF,"['latin', 'menu']",True,train
+230,zhimangxing,HANDWRITING,"['chinese-simplified', 'latin', 'menu']",True,-
+231,underdog,DISPLAY,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,valid
+232,knewave,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+233,gaegu,HANDWRITING,"['korean', 'menu']",False,train
+234,manuale,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+235,notosansarabic,SANS_SERIF,"['arabic', 'menu']",False,-
+236,delius,HANDWRITING,"['menu', 'latin']",True,train
+237,cairo,SANS_SERIF,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+238,palanquindark,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+239,aldrich,SANS_SERIF,"['latin', 'menu']",True,train
+240,notosanslao,SANS_SERIF,"['lao', 'menu']",False,-
+241,corinthia,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+242,slabo13px,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+243,kaiseitokumin,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+244,jura,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'kayah-li', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+245,oldenburg,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+246,rambla,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+247,turretroad,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+248,meddon,HANDWRITING,"['menu', 'latin']",True,-
+249,ruthie,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+250,sourcecodepro,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+251,skranji,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+252,chenla,DISPLAY,"['menu', 'khmer']",False,-
+253,gafata,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+254,peralta,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+255,rammettoone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+256,hanuman,SERIF,"['khmer', 'latin', 'menu']",True,train
+257,grandhotel,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+258,notoseriftc,SERIF,"['chinese-traditional', 'latin', 'menu']",True,-
+259,mada,SANS_SERIF,"['arabic', 'latin', 'menu']",True,train
+260,adobeblank,MONOSPACE,['menu'],False,-
+261,notosanskannada,SANS_SERIF,"['kannada', 'menu']",False,-
+262,pinyonscript,HANDWRITING,"['menu', 'latin']",True,train
+263,shortstack,HANDWRITING,"['menu', 'latin']",True,valid
+264,synetactile,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+265,fredokaone,DISPLAY,"['menu', 'latin']",True,train
+266,giveyouglory,HANDWRITING,"['menu', 'latin']",True,-
+267,dhurjati,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+268,oldstandardtt,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+269,didactgothic,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu']",True,train
+270,lohitbengali,SERIF,['bengali'],False,-
+271,junge,SERIF,"['menu', 'latin']",True,train
+272,kufam,SANS_SERIF,"['arabic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+273,ovo,SERIF,"['menu', 'latin']",True,train
+274,michroma,SANS_SERIF,"['menu', 'latin']",True,-
+275,exo2,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+276,lexendgiga,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+277,dosis,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+278,notoserifgurmukhi,SERIF,"['gurmukhi', 'menu']",False,-
+279,notosanschakma,SANS_SERIF,"['menu', 'chakma']",False,-
+280,notosansmro,SANS_SERIF,"['menu', 'mro']",False,-
+281,inriasans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+282,alice,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'menu']",True,train
+283,lemonada,DISPLAY,"['arabic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+284,yinmar,DISPLAY,"['menu', 'myanmar']",False,-
+285,kdamthmor,DISPLAY,"['menu', 'khmer']",False,train
+286,tuffy,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext']",True,valid
+287,librefranklin,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+288,mate,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+289,asap,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+290,notoserifyezidi,SERIF,"['menu', 'yezidi']",False,-
+291,trainone,DISPLAY,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+292,diplomatasc,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+293,nototraditionalnushu,SANS_SERIF,"['menu', 'nushu']",False,-
+294,stoke,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+295,yeonsung,DISPLAY,"['korean', 'latin', 'menu']",True,-
+296,prostoone,DISPLAY,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,train
+297,sedansc,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+298,leaguegothic,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+299,sofadione,DISPLAY,"['latin', 'menu']",True,valid
+300,cambo,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+301,zillaslabhighlight,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+302,notosanscham,SANS_SERIF,"['menu', 'cham']",False,-
+303,suranna,SERIF,"['menu', 'latin', 'telugu']",True,valid
+304,creteround,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+305,notoserifsinhala,SERIF,"['menu', 'sinhala']",False,-
+306,ribeyemarrow,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+307,biorhyme,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+308,sansation,SANS_SERIF,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,valid
+309,gochihand,HANDWRITING,"['menu', 'latin']",True,train
+310,sarala,SANS_SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,valid
+311,oleoscript,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+312,davidlibre,SERIF,"['hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+313,notosansoldsogdian,SANS_SERIF,"['menu', 'old-sogdian']",False,-
+314,asapcondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+315,notosanskhmerui,SANS_SERIF,"['khmer', 'menu']",False,-
+316,inknutantiqua,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+317,calistoga,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+318,blackandwhitepicture,SANS_SERIF,"['korean', 'menu']",False,train
+319,zcoolkuaile,SANS_SERIF,"['chinese-simplified', 'latin', 'menu']",True,-
+320,daysone,SANS_SERIF,"['menu', 'latin']",True,train
+321,bayon,SANS_SERIF,"['khmer', 'latin', 'menu']",True,-
+322,macondoswashcaps,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+323,podkova,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+324,kenia,DISPLAY,"['menu', 'latin']",True,train
+325,abrilfatface,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+326,kottaone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+327,portersansblock,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+328,rufina,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+329,notosansosmanya,SANS_SERIF,"['menu', 'osmanya']",False,-
+330,vastshadow,DISPLAY,"['menu', 'latin']",True,valid
+331,courierprime,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+332,manjari,SANS_SERIF,"['latin', 'latin-ext', 'malayalam', 'menu']",True,-
+333,trirong,SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,valid
+334,justmeagaindownhere,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,-
+335,readexpro,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+336,nunito,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+337,bodonimoda,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+338,thabit,SERIF,"['menu', 'arabic', 'latin']",True,valid
+339,pollerone,DISPLAY,"['menu', 'latin']",True,-
+340,notoserifahom,SERIF,"['menu', 'ahom']",False,-
+341,notosanstamilsupplement,SANS_SERIF,"['menu', 'tamil-supplement']",False,-
+342,karma,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+343,mansalva,HANDWRITING,"['latin', 'menu']",True,-
+344,yujihentaiganaakari,HANDWRITING,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+345,loveyalikeasister,DISPLAY,"['menu', 'latin']",True,train
+346,offside,DISPLAY,"['menu', 'latin']",True,train
+347,fanwoodtext,SERIF,"['menu', 'latin']",True,train
+348,pushster,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+349,hindkochi,SANS_SERIF,"['menu', 'latin', 'latin-ext', 'malayalam']",True,train
+350,ibmplexsansdevanagari,SANS_SERIF,"['cyrillic-ext', 'devanagari', 'latin', 'latin-ext', 'menu']",True,-
+351,aoboshione,SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+352,sacramento,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+353,saira,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+354,ramabhadra,SANS_SERIF,"['menu', 'latin', 'telugu']",True,valid
+355,corben,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+356,snowburstone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+357,oflsortsmillgoudytt,SERIF,"['menu', 'latin']",True,-
+358,rajdhani,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+359,notosansoldpermic,SANS_SERIF,"['menu', 'old-permic']",False,-
+360,purplepurse,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+361,play,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+362,librecaslondisplay,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+363,librebarcodeean13text,DISPLAY,"['latin', 'menu']",True,-
+364,newsreader,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+365,average,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+366,angkor,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+367,meerainimai,SANS_SERIF,"['latin', 'menu', 'tamil']",True,train
+368,encodesanssemicondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+369,notoseriftelugu,SERIF,"['menu', 'telugu']",False,-
+370,solway,SERIF,"['latin', 'menu']",True,-
+371,dangrek,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+372,geostar,DISPLAY,"['menu', 'latin']",True,train
+373,abhayalibre,SERIF,"['latin', 'latin-ext', 'menu', 'sinhala']",True,train
+374,orienta,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+375,notosanskhudawadi,SANS_SERIF,"['menu', 'khudawadi']",False,-
+376,arefruqaa,SERIF,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+377,buda,DISPLAY,"['latin', 'menu']",True,-
+378,ibmplexmono,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+379,mrssheppards,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+380,patuaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+381,bungee,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+382,spirax,DISPLAY,"['menu', 'latin']",True,valid
+383,arizonia,HANDWRITING,"['latin', 'latin-ext', 'menu']",True,train
+384,warnes,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+385,akayatelivigala,DISPLAY,"['latin', 'latin-ext', 'menu', 'telugu']",True,-
+386,kleeone,HANDWRITING,"['cyrillic', 'greek-ext', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+387,muktamalar,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+388,ranga,DISPLAY,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+389,birthstonebounce,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+390,notoserifmalayalam,SERIF,"['malayalam', 'menu']",False,-
+391,songmyung,SERIF,"['korean', 'menu']",False,valid
+392,hindmysuru,SANS_SERIF,"['menu', 'kannada', 'latin', 'latin-ext']",True,train
+393,notosansoldnortharabian,SANS_SERIF,"['menu', 'old-north-arabian']",False,-
+394,novaslim,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+395,zenloop,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+396,share,DISPLAY,"['latin', 'latin-ext', 'menu']",True,valid
+397,allerta,SANS_SERIF,"['menu', 'latin']",True,train
+398,bigshouldersstenciltext,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+399,shanti,SANS_SERIF,"['menu', 'latin']",True,valid
+400,cedarvillecursive,HANDWRITING,"['menu', 'latin']",True,-
+401,spectralsc,SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+402,archivo,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+403,euphoriascript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+404,londrinashadow,DISPLAY,"['latin', 'menu']",True,train
+405,notosanshanunoo,SANS_SERIF,"['menu', 'hanunoo']",False,-
+406,darkergrotesque,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+407,notoserifgujarati,SERIF,"['gujarati', 'menu']",False,-
+408,notosanslydian,SANS_SERIF,"['menu', 'lydian']",False,-
+409,ewert,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+410,notosanselymaic,SANS_SERIF,"['menu', 'elymaic']",False,-
+411,notonaskharabicui,SERIF,"['arabic', 'menu']",False,-
+412,notosanstaitham,SANS_SERIF,"['menu', 'tai-tham']",False,-
+413,kellyslab,DISPLAY,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,train
+414,mrssaintdelafield,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+415,notosansoldturkic,SANS_SERIF,"['menu', 'old-turkic']",False,-
+416,bigshouldersdisplay,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+417,lilitaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+418,rozhaone,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+419,caveatbrush,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+420,darumadropone,DISPLAY,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+421,righteous,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+422,miniver,DISPLAY,"['menu', 'latin']",True,train
+423,forum,DISPLAY,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,train
+424,markoone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+425,sahitya,SERIF,"['menu', 'devanagari', 'latin']",True,valid
+426,varta,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+427,shipporiminchob1,SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+428,heptaslab,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+429,hinamincho,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+430,fraunces,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+431,sarabun,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,valid
+432,notosansbassavah,SANS_SERIF,"['menu', 'bassa-vah']",False,-
+433,happymonkey,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+434,aguafinascript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+435,katibeh,DISPLAY,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+436,notosanstelugu,SANS_SERIF,"['menu', 'telugu']",False,-
+437,miltonian,DISPLAY,"['menu', 'latin']",True,train
+438,freehand,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+439,revalia,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+440,sanchez,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+441,emilyscandy,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+442,kaiseiopti,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+443,nunitosans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+444,tourney,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+445,meiescript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+446,nerkoone,HANDWRITING,"['latin', 'latin-ext', 'menu']",True,-
+447,aleo,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+448,mergeone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+449,mplus1,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+450,lateef,SERIF,"['menu', 'arabic', 'latin']",True,-
+451,gowundodum,SANS_SERIF,"['korean', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+452,loversquarrel,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+453,hindcolombo,SANS_SERIF,"['menu', 'latin', 'latin-ext', 'sinhala']",True,train
+454,cormorantunicase,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+455,miltoniantattoo,DISPLAY,"['menu', 'latin']",True,train
+456,notosanstc,SANS_SERIF,"['chinese-traditional', 'latin', 'menu']",True,-
+457,blackopsone,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+458,raleway,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+459,actor,SANS_SERIF,"['menu', 'latin']",True,train
+460,festive,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+461,spicyrice,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+462,notosansgothic,SANS_SERIF,"['menu', 'gothic']",False,-
+463,yrsa,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+464,notosanstamilui,SANS_SERIF,"['menu', 'tamil']",False,-
+465,rubikone,SANS_SERIF,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,-
+466,fasterone,DISPLAY,"['menu', 'latin']",True,train
+467,quando,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+468,carroisgothicsc,SANS_SERIF,"['latin', 'menu']",True,train
+469,sen,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+470,notosansmeeteimayek,SANS_SERIF,"['menu', 'meetei-mayek']",False,-
+471,pangolin,HANDWRITING,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+472,suezone,SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,valid
+473,notosanstaile,SANS_SERIF,"['menu', 'tai-le']",False,-
+474,sharetechmono,MONOSPACE,"['menu', 'latin']",True,valid
+475,indieflower,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+476,allura,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+477,kadwa,SERIF,"['menu', 'devanagari', 'latin']",True,train
+478,overlocksc,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+479,archivoblack,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+480,urbanist,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+481,lexendzetta,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+482,kameron,SERIF,"['menu', 'latin']",True,train
+483,reggaeone,DISPLAY,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+484,archivonarrow,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+485,carme,SANS_SERIF,"['menu', 'latin']",True,train
+486,itim,HANDWRITING,"['menu', 'latin', 'latin-ext', 'thai', 'vietnamese']",True,train
+487,lohittamil,SERIF,"['menu', 'tamil']",False,-
+488,inter,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+489,notoserifsc,SERIF,"['chinese-simplified', 'latin', 'menu']",True,-
+490,italiana,SERIF,"['menu', 'latin']",True,train
+491,poorstory,DISPLAY,"['korean', 'latin', 'menu']",True,train
+492,kiranghaerang,DISPLAY,"['korean', 'latin', 'menu']",True,train
+493,slacksideone,HANDWRITING,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+494,notosansthaana,SANS_SERIF,"['menu', 'thaana']",False,-
+495,reemkufi,SANS_SERIF,"['arabic', 'latin', 'menu']",True,valid
+496,gluten,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+497,firamono,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu']",True,-
+498,seymourone,SANS_SERIF,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,valid
+499,tradewinds,DISPLAY,"['menu', 'latin']",True,valid
+500,petrona,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+501,lalezar,SANS_SERIF,"['arabic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+502,sarpanch,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+503,fascinate,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+504,diplomata,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+505,abel,SANS_SERIF,"['latin', 'menu']",True,train
+506,sarina,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+507,notosanstakri,SANS_SERIF,"['menu', 'takri']",False,-
+508,sueellenfrancisco,HANDWRITING,"['menu', 'latin']",True,-
+509,dotgothic16,SANS_SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+510,b612mono,MONOSPACE,"['latin', 'menu']",True,-
+511,sora,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+512,cinzeldecorative,DISPLAY,"['latin', 'menu']",True,train
+513,notosanssamaritan,SANS_SERIF,"['menu', 'samaritan']",False,-
+514,lato,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+515,mrbedfort,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+516,chango,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+517,akronim,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+518,tulpenone,DISPLAY,"['menu', 'latin']",True,valid
+519,notosansteluguui,SANS_SERIF,"['menu', 'telugu']",False,-
+520,notoserifhebrew,SERIF,"['hebrew', 'menu']",False,-
+521,notosanspalmyrene,SANS_SERIF,"['menu', 'palmyrene']",False,-
+522,trykker,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+523,viga,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+524,philosopher,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'menu', 'vietnamese']",True,train
+525,ruluko,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+526,sintony,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+527,mousememoirs,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+528,belgrano,SERIF,"['latin', 'menu']",True,train
+529,stylish,SANS_SERIF,"['korean', 'menu']",False,valid
+530,fascinateinline,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+531,sawarabimincho,SERIF,"['latin', 'latin-ext', 'japanese', 'menu']",True,valid
+532,notoserifbalinese,SERIF,"['menu', 'balinese']",False,-
+533,elsieswashcaps,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+534,iceland,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+535,baskervville,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+536,suravaram,SERIF,"['menu', 'latin', 'telugu']",True,valid
+537,montserratsubrayada,SANS_SERIF,"['menu', 'latin']",True,train
+538,brunoace,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+539,courgette,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+540,preahvihear,SANS_SERIF,"['khmer', 'latin', 'menu']",True,-
+541,notosanscoptic,SANS_SERIF,"['menu', 'coptic']",False,-
+542,chelseamarket,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+543,shizuru,DISPLAY,"['japanese', 'latin', 'menu']",True,-
+544,shadowsintolighttwo,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+545,merriweathersans,SANS_SERIF,"['cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+546,bigshotone,DISPLAY,"['latin', 'menu']",True,train
+547,unicaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+548,sedgwickavedisplay,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+549,jacquesfrancoisshadow,DISPLAY,"['menu', 'latin']",True,train
+550,leaguescript,HANDWRITING,"['latin', 'menu']",True,-
+551,notorashihebrew,SERIF,"['hebrew', 'menu']",False,-
+552,maitree,SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+553,devonshire,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+554,chelaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+555,amethysta,SERIF,"['latin', 'menu']",True,train
+556,kreon,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+557,kurale,SERIF,"['cyrillic', 'cyrillic-ext', 'devanagari', 'latin', 'latin-ext', 'menu']",True,train
+558,zentokyozoo,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+559,signikanegativesc,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+560,eastseadokdo,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+561,pompiere,DISPLAY,"['menu', 'latin']",True,train
+562,manrope,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+563,zcoolxiaowei,SANS_SERIF,"['chinese-simplified', 'latin', 'menu']",True,-
+564,sedan,SERIF,['latin'],True,valid
+565,cagliostro,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+566,kronaone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+567,imprima,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+568,rakkas,DISPLAY,"['arabic', 'latin', 'latin-ext', 'menu']",True,valid
+569,cormorant,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+570,notosansbamum,SANS_SERIF,"['menu', 'bamum']",False,-
+571,tangerine,HANDWRITING,"['latin', 'menu']",True,valid
+572,fondamento,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+573,bonanova,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+574,notosansgeorgian,SANS_SERIF,"['georgian', 'menu']",False,-
+575,cinzel,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+576,redhatmono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+577,notosanskhmer,SANS_SERIF,"['khmer', 'menu']",False,-
+578,notosansbengaliui,SANS_SERIF,"['bengali', 'menu']",False,-
+579,delagothicone,DISPLAY,"['cyrillic', 'greek', 'japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+580,shipporiantique,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+581,ephesis,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+582,chicle,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+583,siemreap,DISPLAY,"['menu', 'khmer']",False,-
+584,sofiasans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,-
+585,donegalone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+586,dorsa,SANS_SERIF,"['menu', 'latin']",True,train
+587,poppins,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+588,carterone,DISPLAY,"['menu', 'latin']",True,-
+589,unifrakturmaguntia,DISPLAY,"['menu', 'latin']",True,-
+590,simonetta,DISPLAY,"['latin', 'latin-ext', 'menu']",True,valid
+591,kumarone,DISPLAY,"['gujarati', 'latin', 'latin-ext', 'menu']",True,-
+592,supermercadoone,DISPLAY,"['menu', 'latin']",True,valid
+593,pirataone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+594,averagesans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+595,adamina,SERIF,"['latin', 'menu']",True,train
+596,marckscript,HANDWRITING,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,train
+597,notosansbuhid,SANS_SERIF,"['menu', 'buhid']",False,-
+598,mochiypopone,SANS_SERIF,"['japanese', 'latin', 'menu']",True,-
+599,alegreyasanssc,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+600,sigmarone,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+601,imfellenglishsc,SERIF,"['menu', 'latin']",True,-
+602,caudex,SERIF,"['menu', 'greek', 'greek-ext', 'latin', 'latin-ext']",True,train
+603,encodesanssemiexpanded,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+604,bungeeoutline,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+605,windsong,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+606,berkshireswash,HANDWRITING,"['latin', 'latin-ext', 'menu']",True,train
+607,nats,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+608,farsan,DISPLAY,"['gujarati', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+609,frijole,DISPLAY,"['menu', 'latin']",True,train
+610,barlowsemicondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+611,phetsarath,SERIF,['lao'],False,-
+612,notosansanatolianhieroglyphs,SANS_SERIF,"['menu', 'anatolian-hieroglyphs']",False,-
+613,alegreyasc,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+614,fenix,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+615,jomolhari,SERIF,"['latin', 'menu', 'tibetan']",True,-
+616,notoserifarmenian,SERIF,"['armenian', 'menu']",False,-
+617,secularone,SANS_SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,valid
+618,imfellfrenchcanonsc,SERIF,"['menu', 'latin']",True,-
+619,enriqueta,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+620,notosanstirhuta,SANS_SERIF,"['menu', 'tirhuta']",False,-
+621,cormorantsc,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+622,notosansogham,SANS_SERIF,"['menu', 'ogham']",False,-
+623,jotione,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+624,istokweb,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,train
+625,inder,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+626,scheherazade,SERIF,"['menu', 'arabic', 'latin']",True,valid
+627,rasa,SERIF,"['gujarati', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+628,notosansosage,SANS_SERIF,"['menu', 'osage']",False,-
+629,balootamma2,DISPLAY,"['kannada', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+630,notosansmanichaean,SANS_SERIF,"['menu', 'manichaean']",False,-
+631,notoserifkr,SERIF,"['korean', 'latin', 'menu']",True,-
+632,cuprum,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+633,bevan,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+634,notoserifdisplay,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+635,goblinone,DISPLAY,"['menu', 'latin']",True,-
+636,rosarivo,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+637,bilbo,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+638,coustard,SERIF,"['latin', 'menu']",True,train
+639,bigshouldersstencildisplay,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+640,dynalight,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+641,cutivemono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,train
+642,eczar,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+643,mohave,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+644,nanumgothiccoding,HANDWRITING,"['menu', 'korean']",False,train
+645,otomanopeeone,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+646,notosanskayahli,SANS_SERIF,"['menu', 'kayah-li']",False,-
+647,bellotatext,DISPLAY,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+648,cantoraone,SANS_SERIF,"['latin', 'latin-ext']",True,train
+649,marmelad,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+650,notosanslimbu,SANS_SERIF,"['menu', 'limbu']",False,-
+651,notosansthailooped,SANS_SERIF,"['menu', 'thai']",False,-
+652,notosansgurmukhiui,SANS_SERIF,"['gurmukhi', 'menu']",False,-
+653,portlligatslab,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+654,imfellfrenchcanon,SERIF,"['menu', 'latin']",True,-
+655,fleurdeleah,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+656,ptmono,MONOSPACE,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+657,biryani,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+658,iceberg,DISPLAY,"['menu', 'latin']",True,train
+659,akayakanadaka,DISPLAY,"['kannada', 'latin', 'latin-ext', 'menu']",True,-
+660,signika,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+661,marvel,SANS_SERIF,"['menu', 'latin']",True,train
+662,mogra,DISPLAY,"['gujarati', 'latin', 'latin-ext', 'menu']",True,train
+663,comfortaa,DISPLAY,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+664,robotoflex,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+665,azeretmono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+666,shipporimincho,SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+667,publicsans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+668,montecarlo,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+669,bangers,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+670,k2d,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+671,gidugu,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+672,federo,SANS_SERIF,"['menu', 'latin']",True,train
+673,notosansgunjalagondi,SANS_SERIF,"['menu', 'gunjala-gondi']",False,-
+674,comforterbrush,HANDWRITING,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+675,oswald,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+676,swankyandmoomoo,HANDWRITING,"['menu', 'latin']",True,-
+677,caesardressing,DISPLAY,"['menu', 'latin']",True,train
+678,amaticsc,HANDWRITING,"['cyrillic', 'hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+679,molengo,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+680,patrickhand,HANDWRITING,"['menu', 'latin', 'latin-ext', 'vietnamese']",True,train
+681,bowlbyonesc,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+682,karantina,DISPLAY,"['hebrew', 'latin', 'latin-ext', 'menu']",True,-
+683,marcellussc,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+684,hind,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+685,notosanskaithi,SANS_SERIF,"['menu', 'kaithi']",False,-
+686,blackhansans,SANS_SERIF,"['korean', 'menu']",False,train
+687,vollkornsc,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+688,sourcesans3,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+689,changa,SANS_SERIF,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+690,notosanskr,SANS_SERIF,"['korean', 'latin', 'menu']",True,-
+691,charmonman,HANDWRITING,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+692,passeroone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+693,amiko,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+694,asset,DISPLAY,"['latin', 'menu']",True,train
+695,lemon,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+696,cabin,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+697,allan,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+698,notosansmeroitic,SANS_SERIF,"['menu', 'meroitic']",False,-
+699,mochiypoppone,SANS_SERIF,"['japanese', 'latin', 'menu']",True,-
+700,dhyana,SERIF,"['menu', 'lao']",False,train
+701,sirinstencil,DISPLAY,"['menu', 'latin']",True,valid
+702,pattaya,SANS_SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+703,montaguslab,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+704,notosansadlam,SANS_SERIF,"['menu', 'adlam']",False,-
+705,gideonroman,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+706,smythe,DISPLAY,"['menu', 'latin']",True,valid
+707,lancelot,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+708,durusans,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+709,majormonodisplay,MONOSPACE,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+710,playfairdisplaysc,SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+711,notosansugaritic,SANS_SERIF,"['menu', 'ugaritic']",False,-
+712,londrinasolid,DISPLAY,"['latin', 'menu']",True,train
+713,quattrocentosans,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+714,graduate,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+715,kiwimaru,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+716,ibarrarealnova,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+717,titilliumweb,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+718,librebaskerville,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+719,alata,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+720,amita,HANDWRITING,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+721,bentham,SERIF,"['latin', 'menu']",True,train
+722,rugeboogie,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+723,deliusunicase,HANDWRITING,"['menu', 'latin']",True,train
+724,crimsontext,SERIF,"['latin', 'menu']",True,train
+725,zcoolqingkehuangyou,SANS_SERIF,"['chinese-simplified', 'latin', 'menu']",True,-
+726,ptserifcaption,SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+727,overlock,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+728,concertone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+729,balsamiqsans,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,-
+730,audiowide,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+731,ballet,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+732,aladin,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+733,notosanszanabazarsquare,SANS_SERIF,"['menu', 'zanabazar-square']",False,-
+734,bahianita,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+735,eaglelake,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+736,notosansgrantha,SANS_SERIF,"['menu', 'grantha']",False,-
+737,boogaloo,DISPLAY,"['latin', 'menu']",True,train
+738,yujisyuku,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+739,fahkwang,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+740,limelight,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+741,shrikhand,DISPLAY,"['gujarati', 'latin', 'latin-ext', 'menu']",True,valid
+742,unlock,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+743,abeezee,SANS_SERIF,"['latin', 'menu']",True,train
+744,tienne,SERIF,"['latin', 'menu']",True,valid
+745,zendots,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+746,pontanosans,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+747,museomoderno,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+748,grenze,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+749,alef,SANS_SERIF,"['hebrew', 'latin', 'menu']",True,train
+750,notosanssinhala,SANS_SERIF,"['menu', 'sinhala']",False,-
+751,greyqo,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+752,zeyada,HANDWRITING,"['menu', 'latin']",True,-
+753,nosifer,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+754,notosanssharada,SANS_SERIF,"['menu', 'sharada']",False,-
+755,fjallaone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+756,andikanewbasic,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+757,merienda,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+758,telex,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+759,notosanstamil,SANS_SERIF,"['menu', 'tamil']",False,train
+760,notosansyi,SANS_SERIF,"['menu', 'yi']",False,-
+761,notosansgurmukhi,SANS_SERIF,"['gurmukhi', 'menu']",False,-
+762,notosansindicsiyaqnumbers,SANS_SERIF,"['menu', 'indic-siyaq-numbers']",False,-
+763,combo,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+764,martelsans,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+765,signikanegative,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+766,matesc,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+767,kaiseidecol,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+768,pragatinarrow,SANS_SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+769,ntr,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+770,jua,SANS_SERIF,"['korean', 'menu']",False,train
+771,notosansphoenician,SANS_SERIF,"['menu', 'phoenician']",False,-
+772,montserratalternates,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+773,ruda,SANS_SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+774,lobster,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+775,lustria,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+776,newtegomin,SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+777,notosansarmenian,SANS_SERIF,"['armenian', 'menu']",False,-
+778,astloch,DISPLAY,"['latin', 'menu']",True,train
+779,wendyone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,-
+780,glassantiqua,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+781,battambang,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+782,bellefair,SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,train
+783,tillana,HANDWRITING,"['devanagari', 'latin', 'latin-ext', 'menu']",True,valid
+784,notosanscuneiform,SANS_SERIF,"['menu', 'cuneiform']",False,-
+785,chakrapetch,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+786,alatsi,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+787,felipa,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+788,bebasneue,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+789,notosansmalayalamui,SANS_SERIF,"['malayalam', 'menu']",False,-
+790,vidaloka,SERIF,"['menu', 'latin']",True,valid
+791,tenaliramakrishna,SANS_SERIF,"['menu', 'latin', 'telugu']",True,valid
+792,notosansdevanagari,SANS_SERIF,"['devanagari', 'menu']",False,-
+793,domine,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+794,lusitana,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+795,nothingyoucoulddo,HANDWRITING,"['menu', 'latin']",True,-
+796,moul,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+797,notosansjavanese,SANS_SERIF,"['menu', 'javanese']",False,-
+798,notosansdeseret,SANS_SERIF,"['menu', 'deseret']",False,-
+799,firacode,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu']",True,-
+800,balooda2,DISPLAY,"['bengali', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+801,spacemono,MONOSPACE,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+802,spartan,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+803,novaflat,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+804,uncialantiqua,DISPLAY,"['menu', 'latin']",True,valid
+805,liujianmaocao,HANDWRITING,"['chinese-simplified', 'latin', 'menu']",True,-
+806,notosanssogdian,SANS_SERIF,"['menu', 'sogdian']",False,-
+807,besley,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+808,zillaslab,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+809,amarante,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+810,librebarcode39,DISPLAY,"['latin', 'menu']",True,-
+811,lora,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+812,romanesco,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+813,notosanshebrew,SANS_SERIF,"['hebrew', 'menu']",False,-
+814,gelasio,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+815,voltaire,SANS_SERIF,"['menu', 'latin']",True,valid
+816,notokufiarabic,SANS_SERIF,"['menu', 'arabic']",False,-
+817,russoone,SANS_SERIF,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,valid
+818,adventpro,SANS_SERIF,"['greek', 'latin', 'latin-ext', 'menu']",True,train
+819,overtherainbow,HANDWRITING,"['menu', 'latin']",True,-
+820,allison,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+821,textmeone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+822,asul,SANS_SERIF,"['latin', 'menu']",True,train
+823,ekmukta,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+824,denkone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+825,ledger,SERIF,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,train
+826,kumbhsans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+827,neuton,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+828,cambay,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+829,sreekrushnadevaraya,SERIF,"['menu', 'latin', 'telugu']",True,valid
+830,lovedbytheking,HANDWRITING,"['menu', 'latin']",True,-
+831,rampartone,DISPLAY,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+832,alegreya,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+833,lexendtera,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+834,cherryswash,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+835,assistant,SANS_SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,train
+836,hindguntur,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'telugu']",True,train
+837,mandali,SANS_SERIF,"['menu', 'latin', 'telugu']",True,train
+838,trochut,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+839,notosansadlamunjoined,SANS_SERIF,"['menu', 'adlam']",False,-
+840,jockeyone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+841,cormorantupright,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+842,magra,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+843,hahmlet,SERIF,"['korean', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+844,notonastaliqurdu,SERIF,"['menu', 'arabic']",False,-
+845,sourceserifpro,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+846,gudea,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+847,stintultracondensed,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+848,sourcesanspro,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+849,notosansdevanagariui,SANS_SERIF,"['devanagari', 'menu']",False,-
+850,missfajardose,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+851,notosanskhojki,SANS_SERIF,"['menu', 'khojki']",False,-
+852,notosanslinearb,SANS_SERIF,"['menu', 'linear-b']",False,-
+853,cantarell,SANS_SERIF,"['menu', 'latin']",True,train
+854,baloochettan2,DISPLAY,"['latin', 'latin-ext', 'malayalam', 'menu', 'vietnamese']",True,-
+855,lifesavers,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+856,monda,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+857,gayathri,SANS_SERIF,"['latin', 'malayalam', 'menu']",True,-
+858,dmsans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+859,redhattext,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+860,griffy,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+861,balootammudu2,DISPLAY,"['latin', 'latin-ext', 'menu', 'telugu', 'vietnamese']",True,-
+862,literata,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+863,notosansthaiui,SANS_SERIF,"['menu', 'thai']",False,-
+864,bevietnampro,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+865,arvo,SERIF,"['latin', 'menu']",True,train
+866,grandstander,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+867,arbutus,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+868,notosanspsalterpahlavi,SANS_SERIF,"['menu', 'psalter-pahlavi']",False,-
+869,ptsans,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+870,montaga,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+871,monsieurladoulaise,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+872,belleza,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+873,medievalsharp,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+874,notosansphagspa,SANS_SERIF,"['menu', 'phags-pa']",False,-
+875,yujiboku,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+876,notosansmendekikakui,SANS_SERIF,"['menu', 'mende-kikakui']",False,-
+877,mali,HANDWRITING,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+878,basic,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+879,megrim,DISPLAY,"['menu', 'latin']",True,-
+880,rumraisin,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+881,goldman,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+882,ptsanscaption,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+883,bevietnam,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+884,varelaround,SANS_SERIF,"['hebrew', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+885,jetbrainsmono,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+886,bungeehairline,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+887,playfairdisplay,SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+888,kavoon,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+889,varela,SANS_SERIF,"['menu', 'latin', 'latin-ext', 'vietnamese']",True,valid
+890,codacaption,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+891,federant,DISPLAY,"['menu', 'latin']",True,train
+892,cormorantinfant,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+893,notosanssinhalaui,SANS_SERIF,"['menu', 'sinhala']",False,-
+894,lakkireddy,HANDWRITING,"['menu', 'latin', 'telugu']",True,train
+895,imfelldwpica,SERIF,"['menu', 'latin']",True,-
+896,kaushanscript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+897,notosanswancho,SANS_SERIF,"['menu', 'wancho']",False,-
+898,oxanium,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+899,mukta,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+900,clickerscript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+901,overpass,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+902,sura,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,valid
+903,cantataone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+904,notosansbalinese,SANS_SERIF,"['menu', 'balinese']",False,-
+905,harmattan,SANS_SERIF,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+906,mplus1code,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+907,jimnightshade,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+908,qahiri,SANS_SERIF,"['arabic', 'latin', 'menu']",True,-
+909,alikeangular,SERIF,"['latin', 'menu']",True,train
+910,vibes,DISPLAY,"['arabic', 'latin', 'menu']",True,-
+911,gentiumbookbasic,SERIF,"['menu', 'latin', 'latin-ext']",True,-
+912,kiteone,SANS_SERIF,"['menu', 'latin']",True,train
+913,brygada1918,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+914,gorditas,DISPLAY,"['menu', 'latin']",True,train
+915,amaranth,SANS_SERIF,"['latin', 'menu']",True,train
+916,barrio,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+917,notomusic,SANS_SERIF,"['menu', 'music']",False,-
+918,galdeano,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+919,hindsiliguri,SANS_SERIF,"['bengali', 'latin', 'latin-ext', 'menu']",True,train
+920,ebgaramond,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+921,padauk,SANS_SERIF,"['latin', 'menu', 'myanmar']",True,-
+922,hanaleifill,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+923,wellfleet,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+924,imbue,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+925,librecaslontext,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+926,rosario,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+927,convergence,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+928,tsukimirounded,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+929,aubrey,DISPLAY,"['latin', 'menu']",True,train
+930,glegoo,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+931,asar,SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+932,spacegrotesk,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+933,bigelowrules,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+934,yatraone,DISPLAY,"['devanagari', 'latin', 'latin-ext', 'menu']",True,-
+935,mysteryquest,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+936,inconsolata,MONOSPACE,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+937,encodesanscondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+938,notoserif,SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'vietnamese']",True,train
+939,dekko,HANDWRITING,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+940,fingerpaint,DISPLAY,"['latin', 'menu']",True,train
+941,inriaserif,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+942,bigshouldersinlinedisplay,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+943,bellota,DISPLAY,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+944,flamenco,DISPLAY,"['latin', 'menu']",True,train
+945,fruktur,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+946,grechenfuemen,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+947,italianno,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+948,marcellus,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+949,bonbon,HANDWRITING,"['latin', 'menu']",True,train
+950,odibeesans,DISPLAY,"['latin', 'menu']",True,-
+951,meriendaone,HANDWRITING,"['menu', 'latin']",True,train
+952,dawningofanewday,HANDWRITING,"['menu', 'latin']",True,-
+953,trispace,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+954,fuggles,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+955,benne,SERIF,"['kannada', 'latin', 'latin-ext', 'menu']",True,-
+956,expletussans,DISPLAY,"['menu', 'latin']",True,train
+957,questrial,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+958,bubblegumsans,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+959,blinker,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+960,anonymouspro,MONOSPACE,"['cyrillic', 'greek', 'latin', 'latin-ext', 'menu']",True,train
+961,averialibre,DISPLAY,"['latin', 'menu']",True,train
+962,langar,DISPLAY,"['gurmukhi', 'latin', 'latin-ext', 'menu']",True,-
+963,rowdies,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+964,galada,DISPLAY,"['bengali', 'latin', 'menu']",True,train
+965,timmana,SANS_SERIF,"['menu', 'latin', 'telugu']",True,valid
+966,lexendmega,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+967,chathura,SANS_SERIF,"['latin', 'menu', 'telugu']",True,train
+968,allertastencil,SANS_SERIF,"['menu', 'latin']",True,train
+969,quintessential,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,valid
+970,explora,HANDWRITING,"['cherokee', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+971,antic,SANS_SERIF,"['latin', 'menu']",True,train
+972,sixcaps,SANS_SERIF,"['menu', 'latin']",True,-
+973,ericaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+974,novasquare,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+975,chauphilomeneone,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+976,lexendexa,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+977,alexbrush,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+978,judson,SERIF,"['menu', 'latin', 'latin-ext', 'vietnamese']",True,train
+979,homenaje,SANS_SERIF,"['latin', 'menu']",True,train
+980,flavors,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+981,notosansegyptianhieroglyphs,SANS_SERIF,"['egyptian-hieroglyphs', 'menu']",False,-
+982,macondo,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+983,encodesansexpanded,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+984,lindenhill,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+985,lilyscriptone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+986,notosansethiopic,SANS_SERIF,"['ethiopic', 'menu']",False,-
+987,miama,HANDWRITING,"['menu', 'greek', 'greek-ext', 'latin', 'latin-ext']",True,train
+988,notoserifmyanmar,SERIF,"['menu', 'myanmar']",False,-
+989,sevillana,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+990,volkhov,SERIF,"['menu', 'latin']",True,valid
+991,condiment,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+992,sunflower,SANS_SERIF,"['korean', 'menu']",False,valid
+993,cardo,SERIF,"['menu', 'greek', 'greek-ext', 'hebrew', 'latin', 'latin-ext']",True,train
+994,oleoscriptswashcaps,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+995,norican,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+996,notosansarabicui,SANS_SERIF,"['arabic', 'menu']",False,-
+997,redrose,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+998,hanalei,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+999,esteban,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1000,gloriahallelujah,HANDWRITING,"['menu', 'latin']",True,-
+1001,notoseriftangut,SERIF,"['menu', 'tangut']",False,-
+1002,juliussansone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1003,ptsansnarrow,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+1004,changaone,DISPLAY,"['menu', 'latin']",True,train
+1005,nanumbrushscript,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+1006,librebarcode39extended,DISPLAY,"['latin', 'menu']",True,-
+1007,pressstart2p,DISPLAY,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu']",True,train
+1008,notosanssc,SANS_SERIF,"['chinese-simplified', 'latin', 'menu']",True,-
+1009,orelegaone,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,-
+1010,electrolize,SANS_SERIF,"['menu', 'latin']",True,train
+1011,staatliches,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+1012,faunaone,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1013,vt323,MONOSPACE,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1014,milonga,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1015,elsie,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+1016,baloothambi2,DISPLAY,"['latin', 'latin-ext', 'menu', 'tamil', 'vietnamese']",True,-
+1017,chokokutai,DISPLAY,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1018,greatvibes,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1019,martel,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+1020,barlowcondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1021,notosansmandaic,SANS_SERIF,"['menu', 'mandaic']",False,-
+1022,snippet,SANS_SERIF,"['menu', 'latin']",True,-
+1023,wireone,SANS_SERIF,"['menu', 'latin']",True,-
+1024,damion,HANDWRITING,"['menu', 'latin']",True,train
+1025,scopeone,SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+1026,spinnaker,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+1027,artifika,SERIF,"['latin', 'menu']",True,train
+1028,tajawal,SANS_SERIF,"['arabic', 'latin', 'menu']",True,valid
+1029,hachimarupop,HANDWRITING,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+1030,dmserifdisplay,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+1031,notoseriftibetan,SERIF,"['menu', 'tibetan']",False,-
+1032,notosanssoyombo,SANS_SERIF,"['menu', 'soyombo']",False,-
+1033,rock3d,DISPLAY,"['japanese', 'latin', 'menu']",True,-
+1034,titanone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1035,princesssofia,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1036,notosansbhaiksuki,SANS_SERIF,"['menu', 'bhaiksuki']",False,-
+1037,srisakdi,DISPLAY,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+1038,lacquer,DISPLAY,"['latin', 'menu']",True,-
+1039,notosansbatak,SANS_SERIF,"['menu', 'batak']",False,-
+1040,hammersmithone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1041,ptserif,SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+1042,redactedscript,HANDWRITING,"['menu', 'latin']",True,-
+1043,jaldi,SANS_SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+1044,tenorsans,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,valid
+1045,yaldevi,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'sinhala']",True,-
+1046,notosansmyanmar,SANS_SERIF,"['menu', 'myanmar']",False,-
+1047,molle,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1048,notosansmongolian,SANS_SERIF,"['menu', 'mongolian']",False,-
+1049,comicneue,HANDWRITING,"['latin', 'menu']",True,-
+1050,arimamadurai,DISPLAY,"['latin', 'latin-ext', 'menu', 'tamil', 'vietnamese']",True,train
+1051,novacut,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+1052,koulen,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+1053,neucha,HANDWRITING,"['menu', 'cyrillic', 'latin']",True,-
+1054,miriamlibre,SANS_SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,train
+1055,ibmplexsansthailooped,SANS_SERIF,"['cyrillic-ext', 'latin', 'latin-ext', 'menu', 'thai']",True,-
+1056,freckleface,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1057,notosansoldsoutharabian,SANS_SERIF,"['menu', 'old-south-arabian']",False,-
+1058,scada,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,valid
+1059,notoserifkannada,SERIF,"['kannada', 'menu']",False,-
+1060,oi,DISPLAY,"['greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1061,baijamjuree,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+1062,ruslandisplay,DISPLAY,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,-
+1063,herrvonmuellerhoff,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1064,montserrat,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1065,notosansdisplay,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1066,fugazone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1067,librebarcode39extendedtext,DISPLAY,"['latin', 'menu']",True,-
+1068,engagement,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1069,paprika,DISPLAY,"['menu', 'latin']",True,train
+1070,creepster,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1071,gfsneohellenic,SANS_SERIF,"['menu', 'greek']",False,train
+1072,imfellenglish,SERIF,"['menu', 'latin']",True,-
+1073,annieuseyourtelescope,HANDWRITING,"['latin', 'menu']",True,train
+1074,sairasemicondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1075,firasansextracondensed,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1076,crimsonpro,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1077,unna,SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+1078,sansitaone,DISPLAY,"['latin', 'menu']",True,valid
+1079,alegreyasans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1080,cabinsketch,DISPLAY,"['latin', 'menu']",True,train
+1081,pottaone,DISPLAY,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1082,athiti,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+1083,ibmplexsanskr,SANS_SERIF,"['korean', 'latin', 'latin-ext', 'menu']",True,-
+1084,bitter,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1085,lexend,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1086,notosanselbasan,SANS_SERIF,"['menu', 'elbasan']",False,-
+1087,bubblerone,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1088,wallpoet,DISPLAY,"['menu', 'latin']",True,-
+1089,notosansmath,SANS_SERIF,"['menu', 'math']",False,-
+1090,anton,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1091,heebo,SANS_SERIF,"['hebrew', 'latin', 'menu']",True,train
+1092,sharetech,SANS_SERIF,"['latin', 'menu']",True,valid
+1093,notosansmayannumerals,SANS_SERIF,"['menu', 'mayan-numerals']",False,-
+1094,notosanslaoui,SANS_SERIF,"['lao', 'menu']",False,-
+1095,croissantone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1096,notosansvai,SANS_SERIF,"['menu', 'vai']",False,-
+1097,butcherman,DISPLAY,"['latin', 'latin-ext', 'menu']",True,train
+1098,sansitaswashed,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1099,notosansmasaramgondi,SANS_SERIF,"['menu', 'masaram-gondi']",False,-
+1100,notosanssundanese,SANS_SERIF,"['menu', 'sundanese']",False,-
+1101,merriweather,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1102,notosanscarian,SANS_SERIF,"['menu', 'carian']",False,-
+1103,stick,SANS_SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+1104,baloobhaina2,DISPLAY,"['latin', 'latin-ext', 'menu', 'oriya', 'vietnamese']",True,-
+1105,viaodalibre,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1106,faustina,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1107,prompt,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+1108,imfelldwpicasc,SERIF,"['menu', 'latin']",True,-
+1109,raviprakash,DISPLAY,"['menu', 'latin', 'telugu']",True,valid
+1110,odormeanchey,SERIF,"['khmer', 'latin', 'menu']",True,-
+1111,puritan,SANS_SERIF,"['menu', 'latin']",True,train
+1112,novaround,DISPLAY,"['menu', 'latin', 'latin-ext']",True,-
+1113,racingsansone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1114,firasans,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1115,mervalescript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1116,caladea,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+1117,vollkorn,SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1118,notosansgujaratiui,SANS_SERIF,"['gujarati', 'menu']",False,-
+1119,metalmania,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1120,quantico,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+1121,notoserifjp,SERIF,"['japanese', 'latin', 'menu']",True,-
+1122,longcang,HANDWRITING,"['chinese-simplified', 'latin', 'menu']",True,-
+1123,xanhmono,MONOSPACE,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1124,yaldevicolombo,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'sinhala']",True,-
+1125,averiaseriflibre,DISPLAY,"['latin', 'menu']",True,train
+1126,redacted,DISPLAY,"['menu', 'latin']",True,-
+1127,rationale,SANS_SERIF,"['menu', 'latin']",True,valid
+1128,bilboswashcaps,HANDWRITING,"['latin', 'latin-ext', 'menu']",True,train
+1129,inika,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1130,sedgwickave,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1131,notosansshavian,SANS_SERIF,"['menu', 'shavian']",False,-
+1132,petitformalscript,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1133,notosanstaiviet,SANS_SERIF,"['menu', 'tai-viet']",False,-
+1134,squadaone,DISPLAY,"['menu', 'latin']",True,valid
+1135,notosans,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'devanagari', 'greek', 'greek-ext', 'latin', 'latin-ext', 'vietnamese']",True,train
+1136,arapey,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1137,contrailone,DISPLAY,"['menu', 'latin']",True,train
+1138,sometypemono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+1139,prata,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'menu', 'vietnamese']",True,train
+1140,notosanstagbanwa,SANS_SERIF,"['menu', 'tagbanwa']",False,-
+1141,cutive,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1142,spectral,SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1143,firasanscondensed,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1144,yanonekaffeesatz,SANS_SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1145,notosanslisu,SANS_SERIF,"['menu', 'lisu']",False,-
+1146,stylescript,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1147,cutefont,DISPLAY,"['korean', 'menu']",False,train
+1148,shipporiantiqueb1,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+1149,synemono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+1150,arbutusslab,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1151,scheherazadenew,SERIF,"['latin', 'latin-ext', 'arabic', 'menu']",True,-
+1152,comforter,HANDWRITING,"['cyrillic', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1153,strait,SANS_SERIF,"['menu', 'latin']",True,valid
+1154,tauri,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+1155,notoserifbengali,SERIF,"['bengali', 'menu']",False,-
+1156,germaniaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1157,notosansduployan,SANS_SERIF,"['menu', 'duployan']",False,-
+1158,content,DISPLAY,"['menu', 'khmer']",False,-
+1159,notosansnabataean,SANS_SERIF,"['menu', 'nabataean']",False,-
+1160,francoisone,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1161,bethellen,HANDWRITING,"['latin', 'menu']",True,-
+1162,notosanssylotinagri,SANS_SERIF,"['menu', 'syloti-nagri']",False,-
+1163,stalinistone,DISPLAY,"['menu', 'cyrillic', 'latin', 'latin-ext']",True,valid
+1164,gurajada,SERIF,"['menu', 'latin', 'telugu']",True,train
+1165,parisienne,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1166,commissioner,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1167,waitingforthesunrise,HANDWRITING,"['menu', 'latin']",True,-
+1168,vampiroone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1169,mavenpro,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1170,antonio,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1171,sansita,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+1172,amiri,SERIF,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+1173,nixieone,DISPLAY,"['menu', 'latin']",True,train
+1174,notosansmarchen,SANS_SERIF,"['menu', 'marchen']",False,-
+1175,mpluscodelatin,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1176,truculenta,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1177,imfellgreatprimer,SERIF,"['menu', 'latin']",True,-
+1178,outfit,SANS_SERIF,"['latin', 'menu']",True,-
+1179,frankruhllibre,SERIF,"['hebrew', 'latin', 'latin-ext', 'menu']",True,train
+1180,sumana,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,valid
+1181,chilanka,HANDWRITING,"['latin', 'latin-ext', 'malayalam', 'menu']",True,-
+1182,piedra,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1183,emblemaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1184,reeniebeanie,HANDWRITING,"['menu', 'latin']",True,-
+1185,mirza,DISPLAY,"['arabic', 'latin', 'latin-ext', 'menu']",True,train
+1186,rocknrollone,SANS_SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+1187,baloopaaji2,DISPLAY,"['gurmukhi', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1188,worksans,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1189,quattrocento,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+1190,architectsdaughter,HANDWRITING,"['latin', 'menu']",True,train
+1191,monoton,DISPLAY,"['menu', 'latin']",True,train
+1192,notosansmedefaidrin,SANS_SERIF,"['menu', 'medefaidrin']",False,-
+1193,dongle,SANS_SERIF,"['korean', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1194,gotu,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1195,poiretone,DISPLAY,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1196,khula,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+1197,notosansjp,SANS_SERIF,"['menu', 'latin', 'japanese']",True,-
+1198,monofett,DISPLAY,"['menu', 'latin']",True,-
+1199,yantramanav,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,-
+1200,yomogi,HANDWRITING,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1201,notosansgujarati,SANS_SERIF,"['gujarati', 'menu']",False,-
+1202,portlligatsans,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1203,notosanshk,SANS_SERIF,"['chinese-hongkong', 'latin', 'menu']",True,-
+1204,caveat,HANDWRITING,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,train
+1205,cookie,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1206,ramaraja,SERIF,"['menu', 'latin', 'telugu']",True,valid
+1207,notosansoriyaui,SANS_SERIF,"['menu', 'oriya']",False,-
+1208,notosanshanifirohingya,SANS_SERIF,"['menu', 'hanifi-rohingya']",False,-
+1209,patrickhandsc,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1210,dohyeon,SANS_SERIF,"['korean', 'latin', 'menu']",True,train
+1211,postnobillsjaffna,DISPLAY,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+1212,galindo,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1213,stardosstencil,DISPLAY,"['menu', 'latin']",True,valid
+1214,notosansbengali,SANS_SERIF,"['bengali', 'menu']",False,-
+1215,notoserifdogra,SERIF,"['menu', 'dogra']",False,-
+1216,cherrybombone,DISPLAY,"['japanese', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1217,nobile,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1218,notosansinscriptionalpahlavi,SANS_SERIF,"['menu', 'inscriptional-pahlavi']",False,-
+1219,yuseimagic,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+1220,krub,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+1221,coveredbyyourgrace,HANDWRITING,"['menu', 'latin']",True,-
+1222,notosanspaucinhau,SANS_SERIF,"['menu', 'pau-cin-hau']",False,-
+1223,jost,SANS_SERIF,"['cyrillic', 'latin', 'latin-ext', 'menu']",True,-
+1224,niramit,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+1225,barriecito,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1226,gamjaflower,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+1227,texturina,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1228,notosanscherokee,SANS_SERIF,"['menu', 'cherokee']",False,-
+1229,cormorantgaramond,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1230,notoserifgeorgian,SERIF,"['georgian', 'menu']",False,-
+1231,kristi,HANDWRITING,"['latin', 'menu']",True,train
+1232,medulaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1233,sail,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1234,sonsieone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1235,gruppo,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1236,benchnine,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1237,arsenal,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1238,girassol,DISPLAY,"['latin', 'latin-ext', 'menu']",True,-
+1239,modak,DISPLAY,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+1240,digitalnumbers,MONOSPACE,"['menu', 'latin']",True,train
+1241,atma,DISPLAY,"['bengali', 'latin', 'latin-ext', 'menu']",True,train
+1242,b612,SANS_SERIF,"['latin', 'menu']",True,-
+1243,kavivanar,HANDWRITING,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+1244,gugi,DISPLAY,"['korean', 'menu']",False,train
+1245,notosanscaucasianalbanian,SANS_SERIF,"['menu', 'caucasian-albanian']",False,-
+1246,drsugiyama,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1247,glory,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1248,notosanstifinagh,SANS_SERIF,"['menu', 'tifinagh']",False,-
+1249,stintultraexpanded,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1250,sticknobills,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'sinhala']",True,-
+1251,notosansnewa,SANS_SERIF,"['menu', 'newa']",False,-
+1252,oranienbaum,SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,train
+1253,radley,SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+1254,labelleaurore,HANDWRITING,"['menu', 'latin']",True,-
+1255,rhodiumlibre,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,valid
+1256,notosanslineara,SANS_SERIF,"['menu', 'linear-a']",False,-
+1257,pavanam,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'tamil']",True,train
+1258,copse,SERIF,"['menu', 'latin']",True,train
+1259,karla,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1260,coiny,DISPLAY,"['latin', 'latin-ext', 'menu', 'tamil', 'vietnamese']",True,train
+1261,breeserif,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1262,librebarcode128,DISPLAY,"['latin', 'menu']",True,-
+1263,bokor,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+1264,geostarfill,DISPLAY,"['menu', 'latin']",True,train
+1265,alfaslabone,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1266,kohsantepheap,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+1267,notosansbrahmi,SANS_SERIF,"['menu', 'brahmi']",False,-
+1268,carroisgothic,SANS_SERIF,"['latin', 'menu']",True,train
+1269,ibmplexsanscondensed,SANS_SERIF,"['cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1270,cherish,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1271,butterflykids,HANDWRITING,"['latin', 'latin-ext', 'menu']",True,train
+1272,kanit,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,train
+1273,notosanspahawhhmong,SANS_SERIF,"['menu', 'pahawh-hmong']",False,-
+1274,holtwoodonesc,SERIF,"['menu', 'latin']",True,-
+1275,metrophobic,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1276,rye,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1277,hennypenny,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1278,karlatamilupright,SANS_SERIF,['tamil'],False,train
+1279,notoseriftamil,SERIF,"['menu', 'tamil']",False,-
+1280,strong,SANS_SERIF,"['menu', 'cyrillic', 'cyrillic-ext', 'latin', 'latin-ext']",True,valid
+1281,brawler,SERIF,"['latin', 'menu']",True,train
+1282,candal,SANS_SERIF,"['menu', 'latin']",True,-
+1283,ibmplexsansarabic,SANS_SERIF,"['arabic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu']",True,-
+1284,signikasc,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1285,vibur,HANDWRITING,"['menu', 'latin']",True,valid
+1286,andika,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1287,kantumruy,SANS_SERIF,"['menu', 'khmer']",False,train
+1288,hermeneusone,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1289,encodesans,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1290,notosansmono,MONOSPACE,"['cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1291,metal,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+1292,dokdo,HANDWRITING,"['korean', 'menu']",False,train
+1293,notosanssorasompeng,SANS_SERIF,"['menu', 'sora-sompeng']",False,-
+1294,deliusswashcaps,HANDWRITING,"['menu', 'latin']",True,train
+1295,notosansthai,SANS_SERIF,"['menu', 'thai']",False,-
+1296,gupter,SERIF,"['latin', 'menu']",True,-
+1297,handlee,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1298,londrinaoutline,DISPLAY,"['latin', 'menu']",True,train
+1299,jollylodger,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1300,lexenddeca,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1301,ruserius,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1302,anticslab,SERIF,"['latin', 'menu']",True,train
+1303,georama,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1304,metamorphous,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1305,dellarespira,SERIF,"['menu', 'latin']",True,train
+1306,redhatdisplay,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,-
+1307,rubik,SANS_SERIF,"['cyrillic', 'cyrillic-ext', 'hebrew', 'latin', 'latin-ext', 'menu']",True,-
+1308,voces,DISPLAY,"['latin', 'latin-ext', 'menu']",True,valid
+1309,oxygenmono,MONOSPACE,"['menu', 'latin', 'latin-ext']",True,train
+1310,lobstertwo,DISPLAY,"['menu', 'latin']",True,train
+1311,imfellgreatprimersc,SERIF,"['menu', 'latin']",True,-
+1312,qwigley,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1313,muktamahee,SANS_SERIF,"['gurmukhi', 'latin', 'latin-ext', 'menu']",True,train
+1314,gildadisplay,SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1315,eater,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1316,averiasanslibre,DISPLAY,"['latin', 'menu']",True,train
+1317,notosanswarangciti,SANS_SERIF,"['menu', 'warang-citi']",False,-
+1318,shojumaru,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1319,acme,SANS_SERIF,"['latin', 'menu']",True,train
+1320,prozalibre,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1321,encodesanssc,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1322,notosansbuginese,SANS_SERIF,"['menu', 'buginese']",False,-
+1323,gfsdidot,SERIF,"['menu', 'greek']",False,train
+1324,ibmplexsanshebrew,SANS_SERIF,"['cyrillic-ext', 'hebrew', 'latin', 'latin-ext', 'menu']",True,-
+1325,notosansmiao,SANS_SERIF,"['menu', 'miao']",False,-
+1326,bungeeshade,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1327,baumans,DISPLAY,"['latin', 'menu']",True,train
+1328,dmmono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,-
+1329,nanummyeongjo,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+1330,prociono,SERIF,"['menu', 'latin']",True,train
+1331,notoserifdevanagari,SERIF,"['devanagari', 'menu']",False,-
+1332,cabincondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1333,nanumpenscript,HANDWRITING,"['menu', 'korean']",False,train
+1334,gowunbatang,SERIF,"['korean', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1335,slabo27px,SERIF,"['menu', 'latin', 'latin-ext']",True,valid
+1336,notosansnko,SANS_SERIF,"['menu', 'nko']",False,-
+1337,seaweedscript,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1338,pacifico,HANDWRITING,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1339,bhavuka,DISPLAY,"['menu', 'devanagari', 'latin', 'latin-ext']",True,train
+1340,caramel,HANDWRITING,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1341,anaheim,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1342,newscycle,SANS_SERIF,"['menu', 'latin', 'latin-ext']",True,train
+1343,pecita,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,-
+1344,laila,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+1345,bungeeinline,DISPLAY,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1346,vesperlibre,SERIF,"['menu', 'devanagari', 'latin', 'latin-ext']",True,valid
+1347,notosanssyriac,SANS_SERIF,"['menu', 'syriac']",False,-
+1348,lexendpeta,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1349,overpassmono,MONOSPACE,"['latin', 'latin-ext', 'menu']",True,train
+1350,noticiatext,SERIF,"['menu', 'latin', 'latin-ext', 'vietnamese']",True,train
+1351,nanumgothic,HANDWRITING,"['korean', 'latin', 'menu']",True,train
+1352,postnobillscolombo,DISPLAY,"['latin', 'latin-ext', 'menu', 'sinhala']",True,train
+1353,rokkitt,SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1354,moulpali,DISPLAY,"['khmer', 'latin', 'menu']",True,-
+1355,kodchasan,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'thai', 'vietnamese']",True,-
+1356,imfelldoublepica,SERIF,"['latin', 'latin-ext', 'menu']",True,-
+1357,notosanssiddham,SANS_SERIF,"['menu', 'siddham']",False,-
+1358,ropasans,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,valid
+1359,niconne,HANDWRITING,"['menu', 'latin', 'latin-ext']",True,train
+1360,notosansolditalic,SANS_SERIF,"['menu', 'old-italic']",False,-
+1361,notosanslepcha,SANS_SERIF,"['menu', 'lepcha']",False,-
+1362,sriracha,HANDWRITING,"['menu', 'latin', 'latin-ext', 'thai', 'vietnamese']",True,valid
+1363,armata,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1364,singleday,DISPLAY,"['korean', 'menu']",False,valid
+1365,ralewaydots,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1366,notosansimperialaramaic,SANS_SERIF,"['menu', 'imperial-aramaic']",False,-
+1367,novamono,MONOSPACE,"['menu', 'greek', 'latin', 'latin-ext']",True,-
+1368,rubikbeastly,DISPLAY,"['cyrillic', 'cyrillic-ext', 'hebrew', 'latin', 'latin-ext', 'menu']",True,-
+1369,oxygen,SANS_SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1370,yujimai,SERIF,"['cyrillic', 'japanese', 'latin', 'latin-ext', 'menu']",True,-
+1371,sairacondensed,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1372,keaniaone,DISPLAY,"['menu', 'latin', 'latin-ext']",True,train
+1373,notoserifkhmer,SERIF,"['khmer', 'menu']",False,-
+1374,suwannaphum,SERIF,"['khmer', 'latin', 'menu']",True,valid
+1375,khand,SANS_SERIF,"['devanagari', 'latin', 'latin-ext', 'menu']",True,train
+1376,notosansoriya,SANS_SERIF,"['menu', 'oriya']",False,-
+1377,sniglet,DISPLAY,"['menu', 'latin', 'latin-ext']",True,valid
+1378,notosansnushu,SANS_SERIF,"['menu', 'nushu']",False,-
+1379,bowlbyone,DISPLAY,"['latin', 'menu']",True,train
+1380,monomaniacone,SANS_SERIF,"['japanese', 'latin', 'latin-ext', 'menu']",True,-
+1381,numans,SANS_SERIF,"['menu', 'latin']",True,train
+1382,biorhymeexpanded,SERIF,"['latin', 'latin-ext', 'menu']",True,train
+1383,livvic,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,-
+1384,notoseriflao,SERIF,"['lao', 'menu']",False,-
+1385,ibmplexserif,SERIF,"['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext', 'menu', 'vietnamese']",True,train
+1386,imfelldoublepicasc,SERIF,"['menu', 'latin']",True,-
+1387,quicksand,SANS_SERIF,"['latin', 'latin-ext', 'menu', 'vietnamese']",True,valid
+1388,librebarcode39text,DISPLAY,"['latin', 'menu']",True,-
+1389,notosansoldpersian,SANS_SERIF,"['menu', 'old-persian']",False,-
+1390,notosansoldhungarian,SANS_SERIF,"['menu', 'old-hungarian']",False,-

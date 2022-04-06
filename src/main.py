@@ -65,21 +65,24 @@ def main(cfg) -> None:
     model.to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=cfg.lr)
-    scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=50, T_mult=2, eta_min=0.001)
+    scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
+        optimizer, T_0=50, T_mult=2, eta_min=0.001)
     try:
         start = torch.cuda.Event(enable_timing=True)
         end = torch.cuda.Event(enable_timing=True)
         start.record()
         n_iter = 0
-        # ★EarlyStoppingクラスのインスタンス化★
-        earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)  # 検証なのでわざとpatience=1回にしている
+        # EarlyStoppingクラスのインスタンス化
+        earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)
         for epoch in range(cfg.epoch):
-            n_iter = train_model(model, train_loader, epoch, cfg.epoch, device, optimizer, writer, n_iter)
+            n_iter = train_model(model, train_loader, epoch, cfg.epoch,
+                                 device, optimizer, writer, n_iter)
 
             loss = eval_model(model, val_loader, epoch, cfg.epoch, device, writer, n_iter)
             scheduler.step(loss/cfg.batch_size)
             # ★毎エポックearlystoppingの判定をさせる★
             earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')  # callメソッド呼び出し
+            save_model_dir = log_dir / f'epoch{epoch:05}.pt'
             if earlystopping.early_stop:  # ストップフラグがTrueの場合、breakでforループを抜ける
                 print('='*60)
                 print('Early Stopping!')
@@ -118,6 +121,7 @@ def main(cfg) -> None:
                         nb_classes=cfg.model.num_classes,
                         cwd=cwd,
                         error_img=False)
+
 
 if __name__ == '__main__':
     main()

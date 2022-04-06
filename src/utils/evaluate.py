@@ -135,58 +135,13 @@ def ConfusionMatrix(test_loader, model_select, model_PATH, save_dir, save_name, 
                 save_name_img = \
                     f'{idx: 05}_Pred: {label2class[y_pred[ill][idx]]} True: {label2class[y_true[ill][idx]]}_{name[:-4]}'
             data = np.array(data)
-            scatdata = data[:np.where(data == -1)[0][0], :] if len(np.where(data == -1)[0]) != 0 else data
+            plotdata = data[:np.where(data == -1)[0][0], :] if len(np.where(data == -1)[0]) != 0 else data
 
-            scat_on_img(scatdata, name, char, save_name_img, save_dir_name, cwd)
+            plot_outline_on_img(plotdata, name, char, save_name_img, save_dir_name, cwd)
     return df_cm
 
 
-def correct_img(test_loader, model_select, model_PATH, save_dir, save_name, device_select,
-                name_char_dict_path, save_dir_name, cwd):
-    device = device_select
-    model = model_select
-    model.load_state_dict(torch.load(model_PATH))
-    model.eval()
-    model.to(device)
-    num = [i for i in range(26)]
-    chars = [chr(i) for i in range(65, 65+26)]
-    label2class = dict(zip(num, chars))
-    trueclasses = []
-    predclasses = []
-    inputsdata = []
-    with torch.no_grad():
-        for inputs, classes in tqdm(test_loader):
-            inputs = inputs.to(device)
-            classes = classes.to(device)
-            outputs = model(inputs)
-            _, preds = torch.max(outputs, 1)
-            inputsdata.append(inputs.to(device='cpu').detach().numpy().copy())
-            trueclasses.append(classes.to(device='cpu').detach().numpy().copy())
-            predclasses.append(preds.to(device='cpu').detach().numpy().copy())
-
-    X = np.array([j for i in inputsdata for j in i.tolist()])
-    y_true = np.array([j for i in trueclasses for j in i.tolist()])
-    y_pred = np.array([j for i in predclasses for j in i.tolist()])
-
-    ill = [i for i in range(len(y_true)) if y_true[i] == y_pred[i]]
-
-    print(f'{len(ill)}/{len(X)}, acc:{float(len(ill))/float(len(X))}')
-    arr = np.random.randint(0, len(ill), 200)
-    with open(name_char_dict_path, 'rb') as f:
-        name_char = pickle.load(f)
-    for idx, data in tqdm(enumerate(X[ill][arr])):
-        name = np.array(name_char)[ill][arr[idx]].tolist()[0]
-        char = np.array(name_char)[ill][arr[idx]].tolist()[1]
-        save_name_img = \
-            f'{idx:05}_Pred: {label2class[y_pred[ill][arr[idx]]]}'
-        f'True: {label2class[y_true[ill][arr[idx]]]}_{name[:-4]}'
-        data = np.array(data)
-        scatdata = data[:np.where(data == -1)[0][0], :] if len(np.where(data == -1)[0]) != 0 else data
-
-        scat_on_img(scatdata, name, char, save_name_img, save_dir_name, cwd)
-
-
-def scat(data, name, save_dir):
+def plot_outline(data, name, save_dir):
     fig = plt.figure(figsize=(10, 10))
     colors = ['red', 'blue']
     cmap = ListedColormap(colors, name="custom")
@@ -202,7 +157,7 @@ def scat(data, name, save_dir):
     plt.close()
 
 
-def scat_on_img(scatdata, name, char, save_name, save_dir_name, cwd):
+def plot_outline_on_img(plotdata, name, char, save_name, save_dir_name, cwd):
     fig = plt.figure(figsize=(10, 10))
     colors = ['red', 'blue']
     cmap = ListedColormap(colors, name="custom")
@@ -227,22 +182,22 @@ def scat_on_img(scatdata, name, char, save_name, save_dir_name, cwd):
         x = []
         y = []
         if width:
-            for i in range(scatdata.shape[0]):
-                x.append(scatdata[i, 0] * res)
-                y.append((hMax - hMin) - scatdata[i, 1] * res)
+            for i in range(plotdata.shape[0]):
+                x.append(plotdata[i, 0] * res)
+                y.append((hMax - hMin) - plotdata[i, 1] * res)
 
         elif hight:
-            for i in range(scatdata.shape[0]):
-                x.append(scatdata[i, 0] * res)
-                y.append(res-(scatdata[i, 1] * res))
+            for i in range(plotdata.shape[0]):
+                x.append(plotdata[i, 0] * res)
+                y.append(res-(plotdata[i, 1] * res))
 
         else:
             res = hMax - hMin
-            for i in range(scatdata.shape[0]):
-                x.append(scatdata[i, 0] * res)
-                y.append(res-(scatdata[i, 1] * res))
+            for i in range(plotdata.shape[0]):
+                x.append(plotdata[i, 0] * res)
+                y.append(res-(plotdata[i, 1] * res))
 
-        im = ax.scatter(x, y, s=100, c=scatdata[:, 2], linewidths=0, alpha=1, cmap=cmap)
+        im = ax.scatter(x, y, s=100, c=plotdata[:, 2], linewidths=0, alpha=1, cmap=cmap)
         fig.colorbar(im)
         ax.set_xticks([])
         ax.set_xlim(min(x) - 10, max(x) + 10)
@@ -257,4 +212,4 @@ def scat_on_img(scatdata, name, char, save_name, save_dir_name, cwd):
         plt.clf()
         plt.close()
     except FileNotFoundError:
-        scat(scatdata, save_name, save_dir_name)
+        plot_outline(plotdata, save_name, save_dir_name)

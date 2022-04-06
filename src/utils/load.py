@@ -1,3 +1,8 @@
+###############
+# We use Googlefonts
+# https://github.com/google/fonts.git
+# And 'google_font_category_v4.csv'
+
 import torch
 from torch.utils.data import Dataset, DataLoader
 from torch.utils.data.dataset import Subset
@@ -11,45 +16,6 @@ import os
 import pickle
 from tqdm import tqdm
 import math
-# Use Googlefonts
-
-
-def get_fold_loader(cfg, cwd, _fold):
-    dataset = QueryDataset(root_dir=cwd / cfg.root_dir, ref_file=cfg.ref_file,
-                           filter=cfg.filter, label_request=cfg.label_request,
-                           request='train', lim=cfg.lim)
-    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=777)
-    train_indexes = []
-    val_indexes = []
-    for train_index, val_index in skf.split(dataset[:][0], dataset[:][1]):
-        train_indexes.append(train_index)
-        val_indexes.append(val_index)
-
-    train_dataset = Subset(dataset, train_indexes[_fold])
-
-    train_loader = DataLoader(train_dataset,
-                              batch_size=cfg.batch_size,
-                              shuffle=True,
-                              collate_fn=collate_fn,
-                              num_workers=2)
-
-    validation_dataset = Subset(dataset, val_indexes[_fold])
-
-    val_loader = DataLoader(validation_dataset,
-                            batch_size=cfg.batch_size,
-                            shuffle=False,
-                            collate_fn=collate_fn,
-                            num_workers=2)
-
-    test_dataset = QueryDataset(root_dir=cwd / cfg.root_dir, ref_file=cfg.ref_file,
-                                filter=cfg.filter, label_request=cfg.label_request,
-                                request='test', lim=cfg.lim)
-    test_loader = DataLoader(test_dataset,
-                             batch_size=cfg.batch_size,
-                             shuffle=False,
-                             collate_fn=collate_fn,
-                             num_workers=2)
-    return train_loader, val_loader, test_loader
 
 
 def get_loader(cfg, cwd):
@@ -91,7 +57,7 @@ def collate_fn(data):
 class QueryDataset(Dataset):
     def __init__(
             self,
-            root_dir: str = '/home/yusuke/Dev/data/fonts/',
+            root_dir: str,
             ref_file: str = 'google_font_category_v4.csv',
             filter: str = "large",
             label_request: str = 'character',
