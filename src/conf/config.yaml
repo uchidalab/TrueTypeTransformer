@@ -13,13 +13,13 @@ cuda: 0
 logs: logs
 patience: 10
 model:
-	name: T3
-	font_dim: 100
-	word_size: 5
-	num_classes: 4
-	embed_dim: 100
-	nhead: 5
-	dim_feedforward: 1024
-	depth: 6
-	dropout: 0.1
-	pool: cls
+ name: T3
+ font_dim: 100
+ word_size: 5
+ num_classes: 4
+ embed_dim: 100
+ nhead: 5
+ dim_feedforward: 1024
+ depth: 6
+ dropout: 0.1
+ pool: cls

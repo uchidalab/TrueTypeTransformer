@@ -125,7 +125,7 @@ class QueryDataset(Dataset):
         in the specified directory.
         """
         root_dir = self.root_dir
-        df = pd.read_csv(root_dir / self.ref_file, index_col=0)
+        df = pd.read_csv(self.ref_file, index_col=0)
         # num = df[(df.data_type == 'train') & (df.category != 'MONOSPACE') & (df.isin_latin)].shape[0]
 
         if self.request == 'train':

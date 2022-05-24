@@ -61,7 +61,7 @@ class Transformer(nn.Module):
         return x
 
 
-class ViTmodel(nn.Module):
+class T3(nn.Module):
     def __init__(self, *, font_dim=100, word_size=5,
                  num_classes=26,
                  embed_dim=100,
@@ -69,7 +69,7 @@ class ViTmodel(nn.Module):
                  mlp_dim=1024,
                  depth=6,
                  pool='cls', dropout=0., emb_dropout=0., batch_first=True):
-        super(ViTmodel, self).__init__()
+        super(T3, self).__init__()
         self.input_shape = (font_dim, word_size)
         assert pool in {'cls', 'mean'}, 'pool type must be either cls (cls token) or mean (mean pooling)'
 
@@ -91,14 +91,7 @@ class ViTmodel(nn.Module):
         x = self.embedding(font)
         b, n, _ = x.shape
 
-        c = []
-        for i in font:
-            if len(torch.where(i == -1)[0]) == 0:
-                c.append([0 for _ in range(len(i) + 1)])
-                continue
-            else:
-                c.append([0 if _ < int(torch.where(i == -1)[0][0].detach() + 1) else 1 for _ in range(len(i) + 1)])
-        src_mask = (torch.tensor(c) == 1).to(x.device)
+        src_mask = torch.cat((torch.full((4,1),fill_value=False), (font == -1)[:,:,0]), dim=1).to(x.device)
 
         cls_tokens = repeat(self.cls_token, '() n d -> b n d', b=b)
         x = torch.cat((cls_tokens, x), dim=1)

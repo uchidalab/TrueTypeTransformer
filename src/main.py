@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
-from model.ViTmodel import ViTmodel
+from model.T3 import T3
 from utils.load import get_loader
 from utils.evaluate import ConfusionMatrix, EarlyStopping
 from utils.train import train_model, eval_model
@@ -18,7 +18,7 @@ import hydra
 today = datetime.date.today()
 
 
-@hydra.main(config_path="conf", config_name="config")
+@hydra.main(version_base=None, config_path="conf", config_name="config")
 def main(cfg) -> None:
     # set initial value
     cwd = Path(hydra.utils.get_original_cwd())
@@ -40,7 +40,7 @@ def main(cfg) -> None:
     # train_loader, val_loader, test_loader = get_fold_loader(cfg, cwd, cfg._fold)
     train_loader, val_loader, test_loader = get_loader(cfg, cwd)
 
-    model = ViTmodel(
+    model = T3(
         font_dim=cfg.model.font_dim,
         word_size=cfg.model.word_size,
         num_classes=cfg.model.num_classes,
@@ -55,7 +55,7 @@ def main(cfg) -> None:
 
     dumyinput = torch.rand(cfg.batch_size, *model.input_shape)
     dumyinput = torch.arange(dumyinput.numel()).reshape(dumyinput.shape).float()
-    writer.add_graph(model, dumyinput)
+    # writer.add_graph(model, dumyinput)
     summary(model, (cfg.batch_size, *model.input_shape), device='cpu')
 
     if torch.cuda.device_count() > 1:
@@ -68,9 +68,10 @@ def main(cfg) -> None:
     scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
         optimizer, T_0=50, T_mult=2, eta_min=0.001)
     try:
-        start = torch.cuda.Event(enable_timing=True)
-        end = torch.cuda.Event(enable_timing=True)
-        start.record()
+        if device == 'cuda':
+            start = torch.cuda.Event(enable_timing=True)
+            end = torch.cuda.Event(enable_timing=True)
+            start.record()
         n_iter = 0
         # EarlyStoppingクラスのインスタンス化
         earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)
@@ -98,12 +99,13 @@ def main(cfg) -> None:
         print('='*60)
         save_ep = epoch - 1
         save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
-    end.record()
-    torch.cuda.synchronize()
-    elapsed_time = start.elapsed_time(end)
-    print(elapsed_time / 1000, 'sec.')
-    with open(log_dir / 'ElapsedTime.txt', 'w') as f:
-        f.write(f'{elapsed_time / 1000} sec.')
+    if device == 'cuda':
+        end.record()
+        torch.cuda.synchronize()
+        elapsed_time = start.elapsed_time(end)
+        print(elapsed_time / 1000, 'sec.')
+        with open(log_dir / 'ElapsedTime.txt', 'w') as f:
+            f.write(f'{elapsed_time / 1000} sec.')
     print('Make ConfusionMatrix and save the report')
     # Use for make errorimg
     train_loader.shuffle = False

@@ -22,7 +22,7 @@ settings.json
 __pycache__/
 *.py[cod]
 *$py.class
-
+.DS_store
 # C extensions
 *.so
 
