@@ -1,11 +1,6 @@
 # original seting
 logs
-log_archive
 outputs
-font
-data
-hist
-logs_ws
 docker
 # copy_file.py
 bitmap.py

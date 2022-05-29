@@ -48,6 +48,6 @@ RUN pip install --upgrade pip
 COPY requirements.txt /
 RUN pip install -r /requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
 RUN pip install flake8 autopep8
-# RUN pip install hydra-core
+# RUN pip install hydra-core --upgrade
 # RUN pip install TTFQuery==2.0.0b1 pandas matplotlib torchinfo scikit-learn jupyterlab tensorboard tqdm einops seaborn
 # RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113

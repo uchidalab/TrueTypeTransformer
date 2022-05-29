@@ -1,46 +1,59 @@
-# TrueType Trannsformer : T3
+# TrueType Transformer : ***T <sup> 3 </sup>***
 
-We proposed recognition model for outline format (i.e. True type format)
+This is an official PyTorch implementation of the paper TrueType Transformer: Character and Font Style Recognition in Outline Format, which is accepted to **DAS2022**.
 
-<!-- 分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+***T <sup> 3 </sup>*** is a recognition model, input as an outline format (i.e. True type format) and output as a class label.
 
-"hoge"が何かを簡潔に紹介する -->
-
-# DEMO
-
-<!-- "hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる -->
-
-# Features
-
-<!-- "hoge"のセールスポイントや差別化などを説明する -->
-
-# Requirement
-
+# Installation
 ```bash
 pip install -r /requirements.txt
 ```
-<!-- "hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2 -->
-
-# Installation
-
-<!-- Requirementで列挙したライブラリなどのインストール方法を説明する -->
-
-```bash
-pip install huga_package
-```
-
 # Usage
-
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
+## Recommendation
+- Git 2.25.1
+- Docker 20.10.13
+## A sample of to create a development environment
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+mkdir -p ~/Dev/data && cd ~/Dev/data
+git clone https://github.com/google/fonts.git
+cd ../
+git clone ${This repository}
+cd ./T3
+sh docker/build.sh
+sh docker/run.sh
 ```
+### A file tree
+```bash
+.
+├── T3
+│   ├── docker
+│   ├── models
+│   ├── src
+│   │   ├── conf
+│   │   │   └── config.yaml
+│   │   ├── model
+│   │   │   └── T3.py
+│   │   ├── utils
+│   │   │   ├── evaluate.py
+│   │   │   ├── load.py
+│   │   │   └── train.py
+│   │   ├ run.sh
+│   │   └ main.py
+│   ├── .gitignore
+│   ├── .env
+│   ├── README.md
+│   ├── Dockerfile
+│   ├── DockerfileM1mac
+│   ├── google_font_category_v4.csv
+│   ├── requirements.txt
+│   └── estimate.ipynb
+└── data
+    └── fonts
+```
+## Dataset
+
+In experiments, we used [Googlefonts](https://github.com/google/fonts.git).
+Please be cautious that we modified these datasets in the way mentioned in the paper.
 
 # Note
 

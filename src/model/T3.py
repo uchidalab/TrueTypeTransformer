@@ -91,7 +91,7 @@ class T3(nn.Module):
         x = self.embedding(font)
         b, n, _ = x.shape
 
-        src_mask = torch.cat((torch.full((4,1),fill_value=False), (font == -1)[:,:,0]), dim=1).to(x.device)
+        src_mask = torch.cat((torch.full((b, 1), fill_value=False), (font == -1)[:, :, 0].cpu()), dim=1).to(x.device)
 
         cls_tokens = repeat(self.cls_token, '() n d -> b n d', b=b)
         x = torch.cat((cls_tokens, x), dim=1)
@@ -109,10 +109,10 @@ if __name__ == '__main__':
     font_dim = 100
     word_size = 5
     num_classes = 26
-    model = ViTmodel(
-        font_dim=font_dim,
-        word_size=word_size,
-        num_classes=num_classes,
+    model = T3(
+        font_dim=100,
+        word_size=5,
+        num_classes=26,
         embed_dim=100,
         depth=6,
         heads=5,

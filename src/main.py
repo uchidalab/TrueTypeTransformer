@@ -83,7 +83,8 @@ def main(cfg) -> None:
             scheduler.step(loss/cfg.batch_size)
             # ★毎エポックearlystoppingの判定をさせる★
             earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')  # callメソッド呼び出し
-            save_model_dir = log_dir / f'epoch{epoch:05}.pt'
+            save_ep = epoch
+            save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
             if earlystopping.early_stop:  # ストップフラグがTrueの場合、breakでforループを抜ける
                 print('='*60)
                 print('Early Stopping!')
@@ -107,6 +108,7 @@ def main(cfg) -> None:
         with open(log_dir / 'ElapsedTime.txt', 'w') as f:
             f.write(f'{elapsed_time / 1000} sec.')
     print('Make ConfusionMatrix and save the report')
+
     # Use for make errorimg
     train_loader.shuffle = False
     phaze = ['train', 'val', 'test']

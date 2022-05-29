@@ -73,7 +73,8 @@ class QueryDataset(Dataset):
         self.request = request
         self.lim = lim
         self.font_names, self.font_df = self._get_font_paths()
-        root = self.root_dir / '../Googlefonts'
+        self.rootsub = './OursDataset'
+        root = self.root_dir / self.rootsub
         if not os.path.isfile(root / f'name_char_dict_{self.request}.pt'):
             self.ttfread(self.font_names, self.font_df)
 
@@ -190,7 +191,8 @@ class QueryDataset(Dataset):
                     font_error.append(font_url.name)
                     break
 
-        root = self.root_dir / '../Googlefonts'
+        root = self.root_dir / self.rootsub
+        root.mkdir(exist_ok=True)
         with open(root / f'name_char_dict_{self.request}.pt', 'wb') as f:
             pickle.dump(idx_name_char, f)
         with open(root / f'{self.request}_error_fontname.pt', 'wb') as f:
