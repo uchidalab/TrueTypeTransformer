@@ -21,6 +21,8 @@ git clone ${This repository}
 cd ./T3
 sh docker/build.sh
 sh docker/run.sh
+sh docker/exec.sh
+sh src/run.sh
 ```
 ### A file tree
 ```bash
@@ -52,8 +54,8 @@ sh docker/run.sh
 ```
 ## Dataset
 
-In experiments, we used [Googlefonts](https://github.com/google/fonts.git).
-Please be cautious that we modified these datasets in the way mentioned in the paper.
+In experiments, we used [Googlefonts](https://github.com/google/fonts.git).\
+Please be cautious that we modified these datasets followed STEFANN for data split.
 
 # Note
 

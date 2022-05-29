@@ -31,7 +31,7 @@ hydra-core==1.2.0
 idna==3.3
 importlib-metadata==4.11.4
 ipykernel==6.13.0
-ipython==8.3.0
+ipython==8.4.0
 ipython-genutils==0.2.0
 jedi==0.18.1
 Jinja2==3.1.2
@@ -60,7 +60,7 @@ notebook==6.4.11
 notebook-shim==0.1.0
 numpy==1.22.4
 oauthlib==3.2.0
-omegaconf==2.2.1
+omegaconf==2.2.2
 packaging==21.3
 pandas==1.4.2
 pandocfilters==1.5.0
@@ -70,7 +70,7 @@ pickleshare==0.7.5
 Pillow==9.1.1
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
-protobuf==3.20.1
+protobuf==4.21.1
 psutil==5.9.1
 ptyprocess==0.7.0
 pure-eval==0.2.2
@@ -106,7 +106,7 @@ tinycss2==1.1.1
 toml==0.10.2
 torch==1.11.0+cu113
 torchaudio==0.11.0+cu113
-torchinfo==1.6.6
+torchinfo==1.7.0
 torchvision==0.12.0+cu113
 tornado==6.1
 tqdm==4.64.0

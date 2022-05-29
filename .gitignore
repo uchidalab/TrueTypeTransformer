@@ -1,18 +1,10 @@
 # original seting
 logs
 outputs
-docker
-# copy_file.py
-bitmap.py
-turtorial.py
-turtorial.ipynb
-test_run.ipynb
 .data
 .vscode
 .devcontainer
 .dockerignore
-runs
-settings.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -117,7 +109,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/

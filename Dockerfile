@@ -1,6 +1,6 @@
 FROM nvidia/cuda:11.3.1-runtime-ubuntu20.04
 
-LABEL maintainer="yusuke.nagata@human.ait.kyushu-u.ac.jp"
+# LABEL maintainer="example@example.com"
 
 # Timezone setting
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
@@ -45,9 +45,11 @@ RUN rm get-pip.py
 RUN pip install --upgrade pip
 
 # Install Python library
-COPY requirements.txt /
-RUN pip install -r /requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
+# COPY requirements.txt /
+# RUN pip install -r /requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
 RUN pip install flake8 autopep8
-# RUN pip install hydra-core --upgrade
-# RUN pip install TTFQuery==2.0.0b1 pandas matplotlib torchinfo scikit-learn jupyterlab tensorboard tqdm einops seaborn
-# RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+
+# or 
+RUN pip install hydra-core --upgrade
+RUN pip install TTFQuery==2.0.0b1 pandas matplotlib torchinfo scikit-learn jupyterlab tensorboard tqdm einops seaborn
+RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
