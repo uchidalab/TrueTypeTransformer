@@ -106,9 +106,6 @@ class T3(nn.Module):
 
 
 if __name__ == '__main__':
-    font_dim = 100
-    word_size = 5
-    num_classes = 26
     model = T3(
         font_dim=100,
         word_size=5,

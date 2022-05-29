@@ -127,7 +127,6 @@ class QueryDataset(Dataset):
         """
         root_dir = self.root_dir
         df = pd.read_csv(self.ref_file, index_col=0)
-        # num = df[(df.data_type == 'train') & (df.category != 'MONOSPACE') & (df.isin_latin)].shape[0]
 
         if self.request == 'train':
             train_fonts_ = []
@@ -217,19 +216,4 @@ class QueryDataset(Dataset):
 if __name__ == "__main__":
 
     train_dataset = QueryDataset(request="train", label_request='style', lim=2838)
-    # val_dataset = QueryDataset(request='val', label_request='style', lim=2838)
     test_dataset = QueryDataset(request='test', label_request='style', lim=2838)
-
-    print()
-    loader = DataLoader(train_dataset,
-                        batch_size=256,
-                        shuffle=False,
-                        collate_fn=collate_fn)
-    # for data, label in loader:
-    #     print(data.shape, label.shape)
-    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=777)
-    train_indexes = []
-    val_indexes = []
-    for train_index, val_index in skf.split(train_dataset[:][0], train_dataset[:][1]):
-        train_indexes.append(train_index)
-        val_indexes.append(val_index)

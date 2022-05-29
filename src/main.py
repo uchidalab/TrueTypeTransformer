@@ -37,7 +37,7 @@ def main(cfg) -> None:
 
     shutil.copytree(cwd / 'src', log_dir / 'src')
 
-    # train_loader, val_loader, test_loader = get_fold_loader(cfg, cwd, cfg._fold)
+
     train_loader, val_loader, test_loader = get_loader(cfg, cwd)
 
     model = T3(
@@ -55,12 +55,11 @@ def main(cfg) -> None:
 
     dumyinput = torch.rand(cfg.batch_size, *model.input_shape)
     dumyinput = torch.arange(dumyinput.numel()).reshape(dumyinput.shape).float()
-    # writer.add_graph(model, dumyinput)
+
     summary(model, (cfg.batch_size, *model.input_shape), device='cpu')
 
     if torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!")
-        # dim = 0 [30, xxx] -> [10, ...], [10, ...], [10, ...] on 3 GPUs
         model = nn.DataParallel(model)
     model.to(device)
 
@@ -73,7 +72,7 @@ def main(cfg) -> None:
             end = torch.cuda.Event(enable_timing=True)
             start.record()
         n_iter = 0
-        # EarlyStoppingクラスのインスタンス化
+        # Set earlyStopping
         earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)
         for epoch in range(cfg.epoch):
             n_iter = train_model(model, train_loader, epoch, cfg.epoch,
@@ -81,11 +80,11 @@ def main(cfg) -> None:
 
             loss = eval_model(model, val_loader, epoch, cfg.epoch, device, writer, n_iter)
             scheduler.step(loss/cfg.batch_size)
-            # ★毎エポックearlystoppingの判定をさせる★
-            earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')  # callメソッド呼び出し
+            # Check the earlystoppingの判定をさせる★
+            earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')
             save_ep = epoch
             save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
-            if earlystopping.early_stop:  # ストップフラグがTrueの場合、breakでforループを抜ける
+            if earlystopping.early_stop:
                 print('='*60)
                 print('Early Stopping!')
                 print('='*60)
@@ -109,7 +108,6 @@ def main(cfg) -> None:
             f.write(f'{elapsed_time / 1000} sec.')
     print('Make ConfusionMatrix and save the report')
 
-    # Use for make errorimg
     train_loader.shuffle = False
     phaze = ['train', 'val', 'test']
     for idx, loader in enumerate([train_loader, val_loader, test_loader]):
