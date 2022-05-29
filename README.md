@@ -6,7 +6,7 @@ This is an official PyTorch implementation of the paper TrueType Transformer: Ch
 
 # Installation
 ```bash
-pip install -r /requirements.txt
+pip install -r ./requirements.txt
 ```
 # Usage
 ## Recommendation
@@ -24,7 +24,7 @@ sh docker/run.sh
 sh docker/exec.sh
 sh src/run.sh
 ```
-### A file tree
+### File tree
 ```bash
 .
 ├── T3
@@ -55,25 +55,36 @@ sh src/run.sh
 ## Dataset
 
 In experiments, we used [Googlefonts](https://github.com/google/fonts.git).\
-Please be cautious that we modified these datasets followed STEFANN for data split.
+Please be cautious that we modified these datasets followed [STEFANN](https://prasunroy.github.io/stefann/) for data split.
 
-# Note
+## Execution scripts
+### Models
+* Proposed: refer to `T3.py`. You can change hyper parameter in the paper by `config.yaml`.
+* Estimate: refer to `estimate.ipynb`.
 
-注意点などがあれば書く
+For a training example, `src/run.sh`.
+
 
 # Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
+* Yusuke Nagata, Jinki Otao, Daichi Haraguchi and Seiichi Uchida
 * E-mail
+  * yusuke.nagata@human.ait.kyushu-u.ac.jp
+  * jinki.otao@human.ait.kyushu-u.ac.jp
+  * daichi.haraguchi@human.ait.kyushu-u.ac.jp
+  * uchida@ait.kyushu-u.ac.jp
 
+# Citation
+[Y. Nagata, J. Otao, D. Haraguchi and S. Uchida "TrueType Transformer: Character and Font Style Recognition in Outline Format." Document Analysis Systems: 15th IAPR International Workshop, DAS 2022, La Rochelle, France, May 22–25, 2022, Proceedings. 2022.](https://link.springer.com/chapter/10.1007/978-3-031-06555-2_2)
+
+```bash
+@inproceedings{nagata2022truetype,
+  title={TrueType Transformer: Character and Font Style Recognition in Outline Format},
+  author={Yusuke Nagata and Jinki Otao and Daichi Haraguchi and Seiichi Uchida},
+  booktitle={International Workshop on Document Analysis Systems},
+  pages={18--32},
+  year={2022},
+  organization={Springer}
+}
+```
 # License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+Follow google fonts for the license of the dataset.
