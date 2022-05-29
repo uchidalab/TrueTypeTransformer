@@ -18,7 +18,7 @@ mkdir -p ~/Dev/data && cd ~/Dev/data
 git clone https://github.com/google/fonts.git
 cd ../
 git clone ${This repository}
-cd ./T3
+cd ./TrueTypeTransformer
 sh docker/build.sh
 sh docker/run.sh
 sh docker/exec.sh
@@ -27,7 +27,7 @@ sh src/run.sh
 ### File tree
 ```bash
 .
-├── T3
+├── TrueTypeTransformer
 │   ├── docker
 │   ├── models
 │   ├── src
