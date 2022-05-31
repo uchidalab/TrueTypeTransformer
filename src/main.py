@@ -5,7 +5,7 @@ from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
 from model.T3 import T3
 from utils.load import get_loader
-from utils.evaluate import ConfusionMatrix, EarlyStopping
+from utils.evaluate import EarlyStopping
 from utils.train import train_model, eval_model
 from pathlib import Path
 import numpy as np
@@ -32,8 +32,7 @@ def main(cfg) -> None:
         torch.cuda.manual_seed(cfg.seed)
     # set logs dir
     num_id = len(glob.glob1(cwd / 'logs', f'{today:%Y%m%d}_*')) + 1
-    writer = SummaryWriter(log_dir=cwd / f'logs/{today:%Y%m%d}_{num_id:02}_{cfg.method}')
-    log_dir = Path(writer.get_logdir())
+    log_dir = Path(cwd / f'logs/{today:%Y%m%d}_{num_id:02}_{cfg.method}')
 
     shutil.copytree(cwd / 'src', log_dir / 'src')
 
@@ -55,7 +54,6 @@ def main(cfg) -> None:
 
     dumyinput = torch.rand(cfg.batch_size, *model.input_shape)
     dumyinput = torch.arange(dumyinput.numel()).reshape(dumyinput.shape).float()
-
     summary(model, (cfg.batch_size, *model.input_shape), device='cpu')
 
     if torch.cuda.device_count() > 1:
@@ -78,9 +76,9 @@ def main(cfg) -> None:
             n_iter = train_model(model, train_loader, epoch, cfg.epoch,
                                  device, optimizer, writer, n_iter)
 
-            loss = eval_model(model, val_loader, epoch, cfg.epoch, device, writer, n_iter)
+            loss = eval_model(model, val_loader, epoch, cfg.epoch, device, n_iter)
             scheduler.step(loss/cfg.batch_size)
-            # Check the earlystoppingの判定をさせる★
+            # Check the earlystopping
             earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')
             save_ep = epoch
             save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
@@ -106,24 +104,5 @@ def main(cfg) -> None:
         print(elapsed_time / 1000, 'sec.')
         with open(log_dir / 'ElapsedTime.txt', 'w') as f:
             f.write(f'{elapsed_time / 1000} sec.')
-    print('Make ConfusionMatrix and save the report')
-
-    train_loader.shuffle = False
-    phaze = ['train', 'val', 'test']
-    for idx, loader in enumerate([train_loader, val_loader, test_loader]):
-        name_char_dict_path = cwd / f'../data/Googlefonts/name_char_dict_{phaze[idx]}.pt'
-        ConfusionMatrix(test_loader=loader,
-                        model_select=model,
-                        model_PATH=save_model_dir,
-                        save_dir=log_dir,
-                        save_name=f'{phaze[idx]}_{save_ep:05}',
-                        device_select=device,
-                        name_char_dict_path=name_char_dict_path,
-                        save_dir_name=log_dir / f'miss_{phaze[idx]}_{save_ep:05}',
-                        nb_classes=cfg.model.num_classes,
-                        cwd=cwd,
-                        error_img=False)
-
-
 if __name__ == '__main__':
     main()

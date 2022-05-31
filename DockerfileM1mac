@@ -38,7 +38,7 @@ RUN pip install --upgrade pip
 
 # Install Python library
 
-RUN pip install hydra-core
+RUN pip install hydra-core==1.2.0
 RUN pip install TTFQuery==2.0.0b1 pandas matplotlib torchinfo scikit-learn jupyterlab tensorboard tqdm einops seaborn
 RUN pip3 install torch torchvision torchaudio
 RUN pip install flake8 autopep8
