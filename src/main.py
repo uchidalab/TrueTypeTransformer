@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
@@ -97,6 +98,26 @@ def main(cfg) -> None:
         print(elapsed_time / 1000, 'sec.')
         with open(log_dir / 'ElapsedTime.txt', 'w') as f:
             f.write(f'{elapsed_time / 1000} sec.')
+
+    # test accuracy
+    model.eval()
+
+    loss = 0.0
+    correct = 0
+    total = 0
+
+    with torch.no_grad():
+        for inputs, labels in tqdm(test_loader):
+            inputs = inputs.to(device)
+            labels = labels.to(device)
+            outputs = model(inputs)
+            loss += F.cross_entropy(outputs, labels, reduction='sum').item()
+            correct += (outputs.max(1)[1] == labels).sum().item()
+            total += len(labels)
+        loss /= total
+        accuracy = correct / total
+    print(f'test loss : {loss} test accuracy : {accuracy}')
+
 
 
 if __name__ == '__main__':

@@ -58,8 +58,8 @@ def eval_model(model, val_loader, epoch, max_epoch, device, writer, n_iter):
         loss /= total
         accuracy = correct / total
 
-        writer.add_scalar('metrics/test_loss', loss, n_iter)
-        writer.add_scalar('metrics/test_accuracy', accuracy, n_iter)
-    print(f'test loss : {loss} test accuracy : {accuracy}')
+        writer.add_scalar('metrics/validation_loss', loss, n_iter)
+        writer.add_scalar('metrics/validation_accuracy', accuracy, n_iter)
+    print(f'validation loss : {loss} validation accuracy : {accuracy}')
 
     return loss
