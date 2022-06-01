@@ -55,7 +55,7 @@ def main(cfg) -> None:
     dumyinput = torch.rand(cfg.batch_size, *model.input_shape)
     dumyinput = torch.arange(dumyinput.numel()).reshape(dumyinput.shape).float()
     summary(model, (cfg.batch_size, *model.input_shape), device='cpu')
-    writer.add_graph(model, dumyinput)
+    # writer.add_graph(model, dumyinput)
 
     if torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!")
