@@ -1,6 +1,7 @@
 # original seting
 logs
 outputs
+ws.sh
 .data
 .vscode
 .devcontainer

@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
 from model.T3 import T3
 from utils.load import get_loader
@@ -31,7 +32,8 @@ def main(cfg) -> None:
         torch.cuda.manual_seed(cfg.seed)
     # set logs dir
     num_id = len(glob.glob1(cwd / 'logs', f'{today:%Y%m%d}_*')) + 1
-    log_dir = Path(cwd / f'logs/{today:%Y%m%d}_{num_id:02}_{cfg.method}')
+    writer = SummaryWriter(log_dir=cwd / f'logs/{today:%Y%m%d}_{num_id:02}_{cfg.method}')
+    log_dir = Path(writer.get_logdir())
 
     shutil.copytree(cwd / 'src', log_dir / 'src')
 
@@ -53,6 +55,7 @@ def main(cfg) -> None:
     dumyinput = torch.rand(cfg.batch_size, *model.input_shape)
     dumyinput = torch.arange(dumyinput.numel()).reshape(dumyinput.shape).float()
     summary(model, (cfg.batch_size, *model.input_shape), device='cpu')
+    writer.add_graph(model, dumyinput)
 
     if torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!")
@@ -71,14 +74,13 @@ def main(cfg) -> None:
         # Set earlyStopping
         earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)
         for epoch in range(cfg.epoch):
-            n_iter = train_model(model, train_loader, epoch, cfg.epoch,
-                                 device, optimizer, n_iter)
+            n_iter = train_model(model, train_loader, epoch, cfg.epoch, device, optimizer, writer, n_iter)
 
-            loss = eval_model(model, val_loader, epoch, cfg.epoch, device, n_iter)
+            loss = eval_model(model, val_loader, epoch, cfg.epoch, device, writer, n_iter)
             scheduler.step(loss/cfg.batch_size)
-            # Check the earlystopping
-            earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')
-            if earlystopping.early_stop:
+            # ★毎エポックearlystoppingの判定をさせる★
+            earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')  # callメソッド呼び出し
+            if earlystopping.early_stop:  # ストップフラグがTrueの場合、breakでforループを抜ける
                 print('='*60)
                 print('Early Stopping!')
                 print('='*60)
