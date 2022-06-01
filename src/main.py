@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
 from model.T3 import T3
 from utils.load import get_loader
@@ -35,7 +34,6 @@ def main(cfg) -> None:
     log_dir = Path(cwd / f'logs/{today:%Y%m%d}_{num_id:02}_{cfg.method}')
 
     shutil.copytree(cwd / 'src', log_dir / 'src')
-
 
     train_loader, val_loader, test_loader = get_loader(cfg, cwd)
 
@@ -74,29 +72,22 @@ def main(cfg) -> None:
         earlystopping = EarlyStopping(patience=cfg.patience, verbose=True)
         for epoch in range(cfg.epoch):
             n_iter = train_model(model, train_loader, epoch, cfg.epoch,
-                                 device, optimizer, writer, n_iter)
+                                 device, optimizer, n_iter)
 
             loss = eval_model(model, val_loader, epoch, cfg.epoch, device, n_iter)
             scheduler.step(loss/cfg.batch_size)
             # Check the earlystopping
             earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')
-            save_ep = epoch
-            save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
             if earlystopping.early_stop:
                 print('='*60)
                 print('Early Stopping!')
                 print('='*60)
-
-                save_ep = epoch - cfg.patience
-                save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
                 break
         print('Done.')
     except KeyboardInterrupt:
         print('='*60)
         print('Early Stopping!')
         print('='*60)
-        save_ep = epoch - 1
-        save_model_dir = log_dir / f'epoch{save_ep:05}.pt'
     if device == 'cuda':
         end.record()
         torch.cuda.synchronize()
@@ -104,5 +95,7 @@ def main(cfg) -> None:
         print(elapsed_time / 1000, 'sec.')
         with open(log_dir / 'ElapsedTime.txt', 'w') as f:
             f.write(f'{elapsed_time / 1000} sec.')
+
+
 if __name__ == '__main__':
     main()

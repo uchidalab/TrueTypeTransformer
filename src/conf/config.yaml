@@ -1,6 +1,6 @@
 method: test
 seed: 777
-batch_size: 4
+batch_size: 6
 lr: 0.0001
 epoch: 50
 root_dir: '../data/fonts/'

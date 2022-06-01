@@ -9,7 +9,6 @@ from torch.utils.data.dataset import Subset
 from ttfquery import describe
 from ttfquery import glyphquery
 import ttfquery.glyph as glyph
-from sklearn.model_selection import StratifiedKFold
 import pandas as pd
 from pathlib import Path
 import os

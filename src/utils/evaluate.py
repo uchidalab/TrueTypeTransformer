@@ -4,7 +4,7 @@ import numpy as np
 
 class EarlyStopping:
     def __init__(self, patience=5, verbose=False):
-        self.patience = patience 
+        self.patience = patience
         self.verbose = verbose
         self.counter = 0
         self.best_score = None
