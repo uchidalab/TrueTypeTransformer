@@ -6,7 +6,7 @@ This is an official PyTorch implementation of the paper TrueType Transformer: Ch
 
 # Installation
 ```bash
-pip install -r ./requirements.txt
+pip install -r /requirements.txt  --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 # Usage
 ## Recommendation
@@ -17,7 +17,7 @@ pip install -r ./requirements.txt
 mkdir -p ~/Dev/data && cd ~/Dev/data
 git clone https://github.com/google/fonts.git
 cd ../
-git clone ${This repository}
+git clone https://github.com/uchidalab/TrueTypeTransformer.git
 cd ./TrueTypeTransformer
 sh docker/build.sh
 sh docker/run.sh
