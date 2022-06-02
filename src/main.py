@@ -2,18 +2,20 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.utils.tensorboard import SummaryWriter
 from torchinfo import summary
-from model.T3 import T3
-from utils.load import get_loader
-from utils.evaluate import EarlyStopping
-from utils.train import train_model, eval_model
+from torch.utils.tensorboard import SummaryWriter
 from pathlib import Path
+from tqdm import tqdm
 import numpy as np
 import shutil
 import datetime
 import glob
 import hydra
+
+from model.T3 import T3
+from utils.load import get_loader
+from utils.evaluate import EarlyStopping
+from utils.train import train_model, eval_model
 
 
 today = datetime.date.today()
@@ -117,7 +119,6 @@ def main(cfg) -> None:
         loss /= total
         accuracy = correct / total
     print(f'test loss : {loss} test accuracy : {accuracy}')
-
 
 
 if __name__ == '__main__':
