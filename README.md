@@ -4,10 +4,6 @@ This is an official PyTorch implementation of the paper TrueType Transformer: Ch
 
 ***T <sup> 3 </sup>*** is a recognition model, input as an outline format (i.e. True type format) and output as a class label.
 
-# Installation
-```bash
-pip install -r /requirements.txt  --extra-index-url https://download.pytorch.org/whl/cu113
-```
 # Usage
 ## Recommendation
 - Git 2.25.1
@@ -56,6 +52,11 @@ sh src/run.sh
 
 In experiments, we used [Googlefonts](https://github.com/google/fonts.git).\
 Please be cautious that we modified these datasets followed [STEFANN](https://prasunroy.github.io/stefann/) for data split.
+
+# Installation
+```bash
+pip install -r /requirements.txt  --extra-index-url https://download.pytorch.org/whl/cu113
+```
 
 ## Execution scripts
 ### Models
