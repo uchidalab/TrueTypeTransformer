@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop my_docker
+docker stop t3_docker

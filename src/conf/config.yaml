@@ -1,8 +1,8 @@
 method: test
 seed: 777
-batch_size: 6
+batch_size: 4
 lr: 0.0001
-epoch: 50
+epoch: 9999
 root_dir: '../data/fonts/'
 ref_file: 'google_font_category_v4.csv'
 label_request: 'style'
