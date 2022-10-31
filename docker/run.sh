@@ -10,9 +10,9 @@ docker run \
     -it \
     --gpus=all \
     --ipc=host \
-    --name=T3_docker \
+    --name=t3_docker \
     --env-file=.env \
     --volume=$PWD:/workspace \
     --volume=$PWD/../data/fonts:/data/fonts \
-    T3_docker:latest \
+    t3_docker:latest \
     fish

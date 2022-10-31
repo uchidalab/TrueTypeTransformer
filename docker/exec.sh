@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec -it T3_docker fish
+docker exec -it t3_docker fish
