@@ -52,6 +52,7 @@ sh src/run.sh
 
 In experiments, we used [Googlefonts](https://github.com/google/fonts.git).\
 Please be cautious that we modified these datasets followed [STEFANN](https://prasunroy.github.io/stefann/) for data split.
+Note, there is a little increase in the font.
 
 # Installation
 ```bash
