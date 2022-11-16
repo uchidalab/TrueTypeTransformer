@@ -2,7 +2,6 @@ import torch
 from torch import nn
 from torchinfo import summary
 from einops import repeat
-from .embed_layer import queryEmbedding
 
 # classes
 
@@ -74,8 +73,9 @@ class T3(nn.Module):
         self.input_shape = (font_dim, word_size)
         assert pool in {'cls', 'mean'}, 'pool type must be either cls (cls token) or mean (mean pooling)'
 
-        # self.embedding = nn.Linear(word_size, embed_dim, bias=True)
-        self.embedding = queryEmbedding(seq_len=2838, n_contours=2838, n_orders=2838, d_model=embed_dim)
+        self.embedding = nn.Linear(word_size, embed_dim, bias=True)
+        # If you want to use nn.Embedding.
+        # self.embedding = queryEmbedding(seq_len=2838, n_contours=2838, n_orders=2838, d_model=embed_dim)
         self.cls_token = nn.Parameter(torch.randn(1, 1, embed_dim))
         self.dropout = nn.Dropout(emb_dropout)
 
