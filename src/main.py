@@ -26,7 +26,8 @@ def main(cfg) -> None:
     # set initial value
     cwd = Path(hydra.utils.get_original_cwd())
     print(f'Orig working directory : {cwd}')
-
+    print('Parameter')
+    print(cfg)
     # set device
     device = torch.device('cuda:' + str(cfg.cuda)) if torch.cuda.is_available() else torch.device('cpu')
     np.random.seed(cfg.seed)
@@ -66,8 +67,7 @@ def main(cfg) -> None:
     model.to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=cfg.lr)
-    scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
-        optimizer, T_0=50, T_mult=2, eta_min=0.001)
+
     try:
         if device == 'cuda':
             start = torch.cuda.Event(enable_timing=True)
@@ -80,7 +80,6 @@ def main(cfg) -> None:
             n_iter = train_model(model, train_loader, epoch, cfg.epoch, device, optimizer, writer, n_iter)
 
             loss = eval_model(model, val_loader, epoch, cfg.epoch, device, writer, n_iter)
-            scheduler.step(loss/cfg.batch_size)
             # ★毎エポックearlystoppingの判定をさせる★
             earlystopping(loss, model, log_dir / f'epoch{epoch:05}.pt')  # callメソッド呼び出し
             if earlystopping.early_stop:  # ストップフラグがTrueの場合、breakでforループを抜ける

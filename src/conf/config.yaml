@@ -1,11 +1,12 @@
 method: test
 seed: 777
-batch_size: 6
+batch_size: 4
 lr: 0.0001
-epoch: 50
-root_dir: '../data/fonts/'
+epoch: 9999
+root: '../data/fonts/'
 ref_file: 'google_font_category_v4.csv'
 label_request: 'style'
+input_N_char: 1
 filter: large
 lim: 2838
 _fold: 0

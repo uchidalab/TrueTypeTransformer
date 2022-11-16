@@ -5,40 +5,38 @@
 
 import torch
 from torch.utils.data import Dataset, DataLoader
-from torch.utils.data.dataset import Subset
+from torch.nn.utils.rnn import pad_sequence
 from ttfquery import describe
 from ttfquery import glyphquery
 import ttfquery.glyph as glyph
 import pandas as pd
 from pathlib import Path
-import os
+from os.path import basename, dirname, exists
 import pickle
 from tqdm import tqdm
-import math
 
 
 def get_loader(cfg, cwd):
-
-    dataset = QueryDataset(root_dir=cwd / cfg.root_dir, ref_file=cfg.ref_file,
-                           filter=cfg.filter, label_request=cfg.label_request,
-                           request='train', lim=cfg.lim)
-    train_dataset = Subset(dataset, [i for i in range(math.ceil(len(dataset)/26*.9) * 26)])
+    train_dataset = QueryDataset(root_dir=cwd / cfg.root, ref_file=cwd / cfg.ref_file,
+                                 label_request=cfg.label_request, split='train', filter='large')
     train_loader = DataLoader(train_dataset,
                               batch_size=cfg.batch_size,
                               shuffle=True,
                               collate_fn=collate_fn,
                               num_workers=2)
 
-    validation_dataset = Subset(dataset, [i for i in range(math.ceil(len(dataset)/26*.9) * 26, len(dataset))])
+    validation_dataset = QueryDataset(root_dir=cwd / cfg.root, ref_file=cwd / cfg.ref_file,
+                                      label_request=cfg.label_request, split='val', filter='large')
+
     val_loader = DataLoader(validation_dataset,
                             batch_size=cfg.batch_size,
                             shuffle=False,
                             collate_fn=collate_fn,
                             num_workers=2)
 
-    test_dataset = QueryDataset(root_dir=cwd / cfg.root_dir, ref_file=cfg.ref_file,
-                                filter=cfg.filter, label_request=cfg.label_request,
-                                request='test', lim=cfg.lim)
+    test_dataset = QueryDataset(root_dir=cwd / cfg.root, ref_file=cwd / cfg.ref_file,
+                                label_request=cfg.label_request, split='test', filter='large')
+
     test_loader = DataLoader(test_dataset,
                              batch_size=cfg.batch_size,
                              shuffle=False,
@@ -49,106 +47,117 @@ def get_loader(cfg, cwd):
 
 def collate_fn(data):
     datas, labels = zip(*data)
-    x = torch.nn.utils.rnn.pad_sequence(datas, batch_first=True, padding_value=-1)
+    x = pad_sequence(datas, batch_first=True, padding_value=-1)
     return x, torch.tensor(labels)
 
 
 class QueryDataset(Dataset):
     def __init__(
             self,
-            root_dir: str,
+            root_dir: str = '../data/fonts',
+            root_sub: str = 'Ours_t3',
             ref_file: str = 'google_font_category_v4.csv',
-            filter: str = "large",
+            meta_file: str = 'google_font_metafile.csv',
             label_request: str = 'character',
-            request: str = "train",
-            lim: int = 2838):
+            split: str = "train",
+            char_select: str = '*',
+            target_char: str = '*',
+            filter: str = 'large',
+            target: bool = False
+    ):
         super(QueryDataset, self).__init__()
         if not filter == "small" and not filter == "large":
             return print(f'your input is {filter}, expected "small" or "large"')
         self.root_dir = Path(root_dir)
+        self.rootsub = root_sub
         self.ref_file = ref_file
         self.filter = filter
         self.label_request = label_request
-        self.request = request
-        self.lim = lim
-        self.font_names, self.font_df = self._get_font_paths()
-        self.rootsub = './OursDataset'
-        root = self.root_dir / self.rootsub
-        if not os.path.isfile(root / f'name_char_dict_{self.request}.pt'):
-            self.ttfread(self.font_names, self.font_df)
+        self.split = split
+        self.font_df = None
+        self.target = target
+        # 自身で作成したメタファイルを読み込み
+        self.meta_df = pd.read_csv(meta_file, index_col=0)
+        self.font_names = self._get_font_paths()
 
-        with open(root / f'{self.request}_dataset.pt', 'rb') as f:
-            self.data = pickle.load(f)
+        if self.split != 'val':
+            if not exists(self.root_dir / self.rootsub / f'name_char_dict_{self.split}.pt'):
+                self.ttfread(self.font_names, self.font_df)
+            assert exists(self.root_dir / self.rootsub / f'{self.split}_dataset'), 'Not exist dataset'
+            # split; train or test
+            data_dir = self.root_dir / self.rootsub / f'{self.split}_dataset'
+        else:
+            data_dir = self.root_dir / self.rootsub / 'train_dataset'
 
-        with open(root / f'name_char_dict_{self.request}.pt', 'rb') as f:
-            self.name_char = pickle.load(f)
-        # print(len(self.data), len(self.name_char))
-        if self.lim < 500:
-            self._lim_data(self.data, self.name_char)
+        self.input_data = self._get_datapath(data_dir, char_select)
+        self.target_data = self._get_datapath(data_dir, target_char)
 
+        print('N of input data', len(self.input_data), ', N of target data', len(self.target_data))
+
+        num = [i for i in range(26)]
+        chars = [chr(i) for i in range(65, 65+26)]
+        char2label = dict(zip(chars, num))
+
+        num_style = [i for i in range(4)]
+        styles = ['SANS_SERIF', 'HANDWRITING', 'DISPLAY', 'SERIF']
+        style2label = dict(zip(styles, num_style))
         if self.label_request == 'character':
-            self.label = [i[2] for i in self.name_char]
-
-        elif self.label_request == 'style':
-            self.label = [i[4] for i in self.name_char]
-        # print(len(self.data), len(self.name_char))
+            self.input_label = [char2label[basename(_)[:-3].split('-')[1]] for _ in self.input_data]
+            self.target_label = [char2label[basename(_)[:-3].split('-')[1]] for _ in self.target_data]
+        if self.label_request == 'style':
+            self.input_label = [style2label[basename(_)[:-3].split('-')[2]] for _ in self.input_data]
+            self.target_label = [style2label[basename(_)[:-3].split('-')[2]] for _ in self.target_data]
 
     def __getitem__(self, index):
-        return self.data[index], torch.tensor(self.label[index])
+        input_data = torch.load(self.input_data[index])
+        target_data = torch.load(self.target_data[index])
+        input_label = self.input_label[index]
+        target_label = self.target_label[index]
+        if self.target:
+            return input_data, target_data, input_label, target_label
+        return input_data, input_label
 
     def __len__(self):
         """Return numbr of font"""
-        return len(self.label)
+        return len(self.input_data)
         # return 26*10
-
-    def _lim_data(self, data, name_char):
-        lim_data = []
-        lim_name_char = []
-        df = pd.DataFrame(name_char, columns=['font', 'char', 'char_id', 'style', 'style_id'])
-        df['points'] = [len(i) for i in data]
-        df_points = pd.DataFrame(df[df.points <= self.lim].groupby('font')['char'].count())
-        NG_font = df_points[df_points.char != 26]['char'].index.tolist()
-
-        for idx, lis in enumerate(name_char):
-            if lis[0] in NG_font:
-                continue
-            lim_data.append(data[idx])
-            lim_name_char.append(lis)
-
-        self.data = lim_data
-        self.name_char = lim_name_char
-        return
 
     def _get_font_paths(self):
         """
         Get the list of available fonts and query information
         in the specified directory.
         """
-        root_dir = self.root_dir
-        df = pd.read_csv(self.ref_file, index_col=0)
+        self.font_df = pd.read_csv(self.ref_file, index_col=0)
+        meta_df = self.font_df
+        train_list = meta_df[(meta_df['data_type'] == 'train') &
+                             (meta_df.category != 'MONOSPACE') & (meta_df.isin_latin)]['font'].tolist()
+        test_list = meta_df[(meta_df['data_type'] == 'valid') &
+                            (meta_df.category != 'MONOSPACE') & (meta_df.isin_latin)]['font'].tolist()
 
-        if self.request == 'train':
-            train_fonts_ = []
-            train_df = df[(df.data_type == 'train') & (df.category != 'MONOSPACE')
-                          & (df.isin_latin)].copy().reset_index()
-            for font_dir in train_df.font.tolist():
-                for sub_dir in ['apache', 'ofl']:
-                    train_fonts_.append(list((root_dir/sub_dir/font_dir).glob('*.ttf')))
-            fonts = [j for i in train_fonts_ for j in i]
-            df_fonts = train_df
+        all_path = list(self.root_dir.glob('**/*.ttf'))
+        train_path = [x for x in all_path if basename(dirname(x)) in train_list]
+        test_path = [x for x in all_path if basename(dirname(x)) in test_list]
+        if self.split == 'train':
+            return train_path
 
-        elif self.request == 'test':
-            test_fonts_ = []
-            test_df = df[(df.data_type == 'valid') & (df.category != 'MONOSPACE')
-                         & (df.isin_latin)].copy().reset_index()
-            for font_dir in test_df.font.tolist():
-                for sub_dir in ['apache', 'ofl']:
-                    test_fonts_.append(list((root_dir/sub_dir/font_dir).glob('*.ttf')))
-            fonts = [j for i in test_fonts_ for j in i]
-            df_fonts = test_df
-        return fonts, df_fonts
+        if self.split == 'test':
+            return test_path
 
-    def ttfread(self, fonts, font_df):
+    def _get_datapath(self, data_dir, char_select):
+        # 選択した文字のパスだけを抽出
+
+        def paths_sorted(paths):
+            return sorted(paths, key=lambda x: str(x.name))
+
+        sorted_data = paths_sorted(list(data_dir.glob(f'*-{char_select}-*.pt')))
+
+        _df = self.meta_df[(self.meta_df['split'] == self.split)].groupby('font_name').count()
+        idx = self.meta_df[self.meta_df['font_name'].isin(_df[_df['index'] == 26].index.tolist())]['index'].tolist()
+
+        idx = list(map(lambda k: f'{k:05}', idx))
+        return [x for x in sorted_data if basename(x)[:-3].split('-')[0] in idx]
+
+    def ttfread(self, font_urls, font_df):
         chars = []
         if self.filter == "small":
             chars = [chr(i) for i in range(97, 97+26)]
@@ -161,51 +170,48 @@ class QueryDataset(Dataset):
         styles = ['SANS_SERIF', 'HANDWRITING', 'DISPLAY', 'SERIF']
         style2label = dict(zip(styles, num_style))
 
-        query = []
-        font_error = []
         idx_name_char = []
-        for font_url in tqdm(fonts):
+        root = self.root_dir / self.rootsub
+        root.mkdir(exist_ok=True)
+        (root / f'{self.split}_dataset').mkdir(parents=True, exist_ok=True)
+
+        idx = 0
+        if self.split == 'test':
+            idx = 1353 * 26  # train fonts: 1353 * characters: 26
+        for font_url in tqdm(font_urls):
             font = describe.openFont(font_url)
             for char in chars:
                 g = glyph.Glyph(glyphquery.glyphName(font, char))
-                try:
-                    contours = g.calculateContours(font)
-                    control_point = []
-                    for contourID, contour in enumerate(contours):
-                        orderID = 0
-                        for (point_x, point_y), flag in contour:
-                            control_point.append([point_x, point_y, flag, contourID, orderID])
-                            orderID += 1
-                    query.append(self.zero2one(torch.tensor(control_point), self.lim))
-                    _char = char2label[char]
-                    style = font_df[font_df['font'] == font_url.parent.name]['category'].tolist()[0]
-                    _style = style2label[style]
-                    idx_name_char.append([font_url.name,
-                                          char,
-                                          _char,
-                                          style,
-                                          _style])
-                except Exception:
-                    font_error.append(font_url.name)
-                    break
+                contours = g.calculateContours(font)
+                control_point = []
+                for contourID, contour in enumerate(contours):
+                    orderID = 0
+                    for (point_x, point_y), flag in contour:
+                        control_point.append([point_x, point_y, flag, contourID, orderID])
+                        orderID += 1
+                style = font_df[font_df['font'] == font_url.parent.name]['category'].tolist()[0]
+                torch.save(self.zero2one(torch.tensor(control_point)),  root / f'{self.split}_dataset/{idx:05}-{char}-{style}.pt')
+                idx += 1
+                # save meta data about fontname, character, font style
+                _char = char2label[char]
+                _style = style2label[style]
+                idx_name_char.append([font_url.name,
+                                      char,
+                                      _char,
+                                      style,
+                                      _style])
 
-        root = self.root_dir / self.rootsub
-        root.mkdir(exist_ok=True)
-        with open(root / f'name_char_dict_{self.request}.pt', 'wb') as f:
+        with open(root / f'name_char_dict_{self.split}.pt', 'wb') as f:
             pickle.dump(idx_name_char, f)
-        with open(root / f'{self.request}_error_fontname.pt', 'wb') as f:
-            pickle.dump(font_error, f)
-        with open(root / f'{self.request}_dataset.pt', 'wb') as f:
-            pickle.dump(query, f)
-        print(f"all font {len(fonts) * 26} import font {len(query)} reject font {len(font_error)}")
+        print(f"all font {len(font_urls) * 26} import font {idx}")
 
         return
 
-    def zero2one(self, data, lim):
+    def zero2one(self, data):
         x = data[:, 0]
         y = data[:, 1]
-        contourID = data[:, 3] / (lim-1)
-        orderID = data[:, 4] / (lim-1)
+        contourID = data[:, 3]
+        orderID = data[:, 4]
         x = x + abs(x.min()) if x.min() < 0 else x - abs(x.min())
         y = y + abs(y.min()) if y.min() < 0 else y - abs(y.min())
         maxvalue = torch.stack([x, y]).max()
